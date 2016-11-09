@@ -4,8 +4,10 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:jdt="http://www.eclipse.org/oomph/setup/jdt/1.0"
+    xmlns:pde="http://www.eclipse.org/oomph/setup/pde/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore"
+    xmlns:setup.targlets="http://www.eclipse.org/oomph/setup/targlets/1.0"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/setup/pde/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/PDE.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore"
     name="ru.agentlab"
     label="AgentLab Projects">
   <annotation
@@ -50,12 +52,7 @@
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
-        name="org.eclipse.egit.core">
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          key="/instance/org.eclipse.egit.core/core_defaultRepositoryDir"
-          value="${ru.agentlab.clone.location}"/>
-    </setupTask>
+        name="org.eclipse.egit.core"/>
     <setupTask
         xsi:type="setup:CompoundTask"
         name="org.eclipse.jdt.core">
@@ -1957,6 +1954,47 @@
           label="None"/>
       <description>Choose the compatibility level of the target platform</description>
     </setupTask>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        name="eclipse.api.baseline.target.platform"
+        value=""
+        defaultValue="Neon"
+        storageURI="scope://Workspace"
+        label="API Baseline Target Platform">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/GlobalVariable"/>
+      <choice
+          value="Oxygen"
+          label="Eclipse Oxygen - 4.7"/>
+      <choice
+          value="Neon"
+          label="Eclipse Neon - 4.6"/>
+      <choice
+          value="Mars"
+          label="Eclipse Mars - 4.5"/>
+      <choice
+          value="Luna"
+          label="Eclipse Luna - 4.4"/>
+      <choice
+          value="Kepler"
+          label="Eclipse Kepler - 4.3"/>
+      <choice
+          value="Juno"
+          label="Eclipse Juno - 4.2"/>
+      <choice
+          value="Indigo"
+          label="Eclipse Indigo - 3.7"/>
+      <choice
+          value="Helios"
+          label="Eclipse Helios - 3.6"/>
+      <choice
+          value="Galileo"
+          label="Eclipse Galileo - 3.5"/>
+      <choice
+          value="None"
+          label="None"/>
+      <description>Choose the compatibility level of the target platform for the modular API baseline</description>
+    </setupTask>
   </setupTask>
   <setupTask
       xsi:type="jdt:JRETask"
@@ -1976,6 +2014,127 @@
         pattern="osgi\.instance\.area\.default=(@user\.home/workspace)">
       <substitution>${workspace.location|path}</substitution>
     </modification>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.targlets:TargletTask">
+    <targlet
+        name="Eclipse Platform"
+        activeRepositoryList="${eclipse.target.platform}">
+      <repositoryList
+          name="None"/>
+      <repositoryList
+          name="Oxygen">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7-I-builds"/>
+      </repositoryList>
+      <repositoryList
+          name="Neon">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6"/>
+      </repositoryList>
+      <repositoryList
+          name="Mars">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.5"/>
+      </repositoryList>
+      <repositoryList
+          name="Luna">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.4"/>
+      </repositoryList>
+      <repositoryList
+          name="Kepler">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.3"/>
+      </repositoryList>
+      <repositoryList
+          name="Juno">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.2"/>
+      </repositoryList>
+      <repositoryList
+          name="Indigo">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/3.7"/>
+      </repositoryList>
+      <repositoryList
+          name="Helios">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/3.6"/>
+      </repositoryList>
+      <repositoryList
+          name="Galileo">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/3.5"/>
+      </repositoryList>
+    </targlet>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.targlets:TargletTask"
+      id="api.baseline.targlet"
+      targetName="Modular API Baseline Target"
+      activateTarget="false">
+    <targlet
+        name="Eclipse Platform"
+        activeRepositoryList="${eclipse.api.baseline.target.platform}"
+        includeSources="false">
+      <repositoryList
+          name="None"/>
+      <repositoryList
+          name="Oxygen">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7-I-builds"/>
+      </repositoryList>
+      <repositoryList
+          name="Neon">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6"/>
+      </repositoryList>
+      <repositoryList
+          name="Mars">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.5"/>
+      </repositoryList>
+      <repositoryList
+          name="Luna">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.4"/>
+      </repositoryList>
+      <repositoryList
+          name="Kepler">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.3"/>
+      </repositoryList>
+      <repositoryList
+          name="Juno">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.2"/>
+      </repositoryList>
+      <repositoryList
+          name="Indigo">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/3.7"/>
+      </repositoryList>
+      <repositoryList
+          name="Helios">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/3.6"/>
+      </repositoryList>
+      <repositoryList
+          name="Galileo">
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/3.5"/>
+      </repositoryList>
+    </targlet>
+  </setupTask>
+  <setupTask
+      xsi:type="pde:APIBaselineFromTargetTask"
+      name="Modular API Baseline"
+      targetName="Modular API Baseline Target">
+    <predecessor
+        xsi:type="setup.targlets:TargletTask"
+        href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/'api.baseline.targlet'"/>
+    <description>An API baseline based on the target platform named 'Modular API Baseline Target'</description>
   </setupTask>
   <project href="https://raw.githubusercontent.com/agentlab/ru.agentlab.calendar/master/setups/ru.agentlab.calendar.setup/ru.agentlab.calendar.setup#/"/>
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
