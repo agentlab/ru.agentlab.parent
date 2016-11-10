@@ -88,8 +88,6 @@
       <requirement
           name="org.eclipse.egit.gitflow.feature.feature.group"/>
       <requirement
-          name="org.eclipse.egit.import.feature.group"/>
-      <requirement
           name="org.eclipse.egit.mylyn.feature.group"/>
       <requirement
           name="org.eclipse.mylyn_feature.feature.group"/>
@@ -262,8 +260,6 @@
       <requirement
           name="org.eclipse.egit.gitflow.feature.feature.group"/>
       <requirement
-          name="org.eclipse.egit.import.feature.group"/>
-      <requirement
           name="org.eclipse.egit.mylyn.feature.group"/>
       <requirement
           name="org.eclipse.mylyn_feature.feature.group"/>
@@ -411,10 +407,15 @@
             name="org.eclipse.e4.tools.preference.spy.feature.feature.group"/>
         <requirement
             name="org.eclipse.e4.tools.model.spy.feature.feature.group"/>
-        <requirement
-            name="eu.musoft.eclipse.xpath.evaluation.plugin.feature.group"/>
         <repository
             url="http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="XPath">
+        <requirement
+            name="eu.musoft.eclipse.xpath.evaluation.plugin.feature.group"/>
         <repository
             url="https://raw.githubusercontent.com/stoupa91/eclipse-xpath-evaluation-plugin/master/eclipse-xpath-evaluation-plugin-update-site/"/>
       </setupTask>
@@ -473,8 +474,6 @@
           name="org.eclipse.egit.feature.group"/>
       <requirement
           name="org.eclipse.egit.gitflow.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.import.feature.group"/>
       <requirement
           name="org.eclipse.egit.mylyn.feature.group"/>
       <requirement
