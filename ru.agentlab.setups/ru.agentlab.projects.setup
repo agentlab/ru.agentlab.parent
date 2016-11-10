@@ -2016,7 +2016,8 @@
     </modification>
   </setupTask>
   <setupTask
-      xsi:type="setup.targlets:TargletTask">
+      xsi:type="setup.targlets:TargletTask"
+      disabled="true">
     <targlet
         name="Eclipse Platform"
         activeRepositoryList="${eclipse.target.platform}">
@@ -2136,6 +2137,6 @@
         href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/'api.baseline.targlet'"/>
     <description>An API baseline based on the target platform named 'Modular API Baseline Target'</description>
   </setupTask>
-  <project href="https://raw.githubusercontent.com/agentlab/ru.agentlab.calendar/master/setups/ru.agentlab.calendar.setup/ru.agentlab.calendar.setup#/"/>
+  <project href="user:/ru.agentlab.projects.setup?name='user.project',label='&lt;User>',description='A container project for local user projects that are virtual members of the AgentLab.ru project catalog'#/"/>
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>
