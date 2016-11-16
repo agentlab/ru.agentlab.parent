@@ -2166,6 +2166,7 @@
   <project href="https://raw.githubusercontent.com/agentlab/ru.agentlab.calendar/master/setups/ru.agentlab.calendar.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/JaxRSProviders/master/setups/org.eclipse.ecf.provider.jaxrs.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/ru.agentlab.oomph.launcher/master/setups/ru.agentlab.oomph.launcher.setup#/"/>
+  <project href="https://raw.githubusercontent.com/agentlab/powerloom-osgi/master/setups/edu.isi.powerloom.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/org.slf4j.osgi/master/setups/org.slf4j.osgi.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/SystemTray/master/setups/systemtray.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/net.sf.tweety/master/setups/net.sf.tweety.setup#/"/>
