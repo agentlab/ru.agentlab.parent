@@ -2167,5 +2167,6 @@
   <project href="https://raw.githubusercontent.com/agentlab/JaxRSProviders/master/setups/org.eclipse.ecf.provider.jaxrs.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/ru.agentlab.oomph.launcher/master/setups/ru.agentlab.oomph.launcher.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/org.slf4j.osgi/master/setups/org.slf4j.osgi.setup#/"/>
+  <project href="https://raw.githubusercontent.com/agentlab/net.sf.tweety/master/setups/net.sf.tweety.setup#/"/>
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>
