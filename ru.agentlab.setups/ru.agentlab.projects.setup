@@ -2161,9 +2161,10 @@
     <description>An API baseline based on the target platform named 'Modular API Baseline Target'</description>
   </setupTask>
   <project href="user:/ru.agentlab.projects.setup?name='user.project',label='&lt;User>',description='A container project for local user projects that are virtual members of the AgentLab.ru project catalog'#/"/>
+  <project href="https://raw.githubusercontent.com/agentlab/ambry/master/setups/com.github.ambry.setup#/"/>
+  <project href="https://raw.githubusercontent.com/agentlab/draw.io/master/setups/draw.io.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/ru.agentlab.calendar/master/setups/ru.agentlab.calendar.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/JaxRSProviders/master/setups/org.eclipse.ecf.provider.jaxrs.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/ru.agentlab.oomph.launcher/master/setups/ru.agentlab.oomph.launcher.setup#/"/>
-  <project href="https://raw.githubusercontent.com/agentlab/draw.io/master/setups/draw.io.setup#/"/>
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>
