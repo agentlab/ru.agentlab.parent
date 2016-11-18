@@ -2171,5 +2171,6 @@
   <project href="https://raw.githubusercontent.com/agentlab/SystemTray/master/setups/systemtray.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/net.sf.tweety/master/setups/net.sf.tweety.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/uss/master/setups/UserStorageService.setup#/"/>
+  <project href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>
