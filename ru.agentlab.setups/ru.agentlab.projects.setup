@@ -2340,6 +2340,29 @@
     <project
         name="fx"
         label="OSGi JavaFX Projects">
+      <setupTask
+          xsi:type="setup.targlets:TargletTask">
+        <targlet
+            name="${scope.project.label}"
+            activeRepositoryList="${eclipse.target.platform}"
+            includeAllPlatforms="true">
+          <requirement
+              name="org.eclipse.fx.core.feature.feature.group"/>
+          <requirement
+              name="org.eclipse.fx.target.feature.feature.group"/>
+          <requirement
+              name="org.eclipse.platform.feature.group"/>
+          <requirement
+              name="org.eclipse.rcp.feature.group"/>
+          <repositoryList
+              name="Neon">
+            <repository
+                url="http://download.eclipse.org/efxclipse/runtime-nightly/site"/>
+            <repository
+                url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+          </repositoryList>
+        </targlet>
+      </setupTask>
       <project
           href="https://raw.githubusercontent.com/agentlab/ru.agentlab.oomph.launcher/master/setups/ru.agentlab.oomph.launcher.setup#/"/>
       <stream
