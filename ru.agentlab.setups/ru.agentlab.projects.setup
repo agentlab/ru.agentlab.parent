@@ -2265,6 +2265,8 @@
         href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/powerloom-osgi/master/setups/edu.isi.powerloom.setup#/"/>
+	<project
+        href="https://raw.githubusercontent.com/agentlab/rxtx-osgi/master/setups/ru.agentlab.rxtx.osgi.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/org.slf4j.osgi/master/setups/org.slf4j.osgi.setup#/"/>
     <project
