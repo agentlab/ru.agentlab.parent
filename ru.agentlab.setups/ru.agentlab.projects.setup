@@ -9,16 +9,16 @@
     xmlns:setup.targlets="http://www.eclipse.org/oomph/setup/targlets/1.0"
     xsi:schemaLocation="http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/setup/pde/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/PDE.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore"
     name="ru.agentlab"
-    label="AgentLab Projects">
+    label="1C Projects">
   <annotation
       source="http://www.eclipse.org/oomph/setup/BrandingInfo">
     <detail
         key="imageURI">
-      <value>https://avatars3.githubusercontent.com/u/18165093?v=3&amp;s=200</value>
+      <value>http://10.72.103.217/cloudedt.png</value>
     </detail>
     <detail
         key="siteURI">
-      <value>https://github.com/agentlab/</value>
+      <value>http://1c.com/</value>
     </detail>
   </annotation>
   <setupTask
@@ -2408,6 +2408,10 @@
           <requirement
               name="org.aopalliance"/>
           <requirement
+              name="org.apache.aries.spifly.dynamic.bundle"/>
+          <requirement
+              name="org.apache.aries.util"/>
+          <requirement
               name="org.eclipse.core.runtime.feature.feature.group"/>
           <requirement
               name="org.eclipse.ecf.core.feature.group"/>
@@ -2518,5 +2522,5 @@
     <description>OSGi versions of libraries and frameworks meant to work inside Eclipse Equinox</description>
   </project>
   <project href="https://raw.githubusercontent.com/agentlab/draw.io/master/setups/draw.io.setup#/"/>
-  <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
+  <description>All the projects at 1C that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>

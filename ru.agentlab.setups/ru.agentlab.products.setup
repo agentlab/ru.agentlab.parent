@@ -6,7 +6,7 @@
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
     name="ru.agentlab.products"
-    label="AgentLab Products">
+    label="1C Products">
   <annotation
       source="http://www.eclipse.org/oomph/setup/BrandingInfo">
     <detail
@@ -15,7 +15,11 @@
     </detail>
     <detail
         key="imageURI">
-      <value>https://avatars2.githubusercontent.com/u/2325317?v=3&amp;s=200</value>
+      <value>http://10.72.103.217/cloudedt.png</value>
+    </detail>
+    <detail
+        key="siteURI">
+      <value>http://1c.com/</value>
     </detail>
   </annotation>
   <annotation
@@ -1595,5 +1599,5 @@
     </version>
     <description>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.</description>
   </product>
-  <description>AgentLab Tools which are useful in our projects development</description>
+  <description>1C Tools which are useful in our projects development</description>
 </setup:ProductCatalog>
