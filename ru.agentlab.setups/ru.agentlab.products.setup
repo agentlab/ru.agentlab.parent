@@ -630,23 +630,35 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
+          label="Developer IDE  (Neon)">
+        <requirement
+            name="org.eclipse.pde.feature.group"/>
+        <requirement
+            name="org.eclipse.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/technology/epp/packages/neon"/>
+        <repository
+            url="http://download.eclipse.org/releases/neon"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
           label="Eclipse Modeling Tools (Neon)">
         <requirement
-            name="org.eclipse.papyrus.sysml.feature.feature.group"/>
+            name="org.eclipse.papyrus.designer.languages.java.feature.feature.group"/>
         <requirement
-            name="org.eclipse.papyrus.bmm.extra.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.papyrus.bpmn.extra.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.papyrus.uml.diagram.education.feature.feature.group"/>
+            name="org.eclipse.papyrus.designer.languages.common.feature.feature.group"/>
         <requirement
             name="org.eclipse.papyrus.layers.feature.feature.group"/>
         <requirement
-            name="org.eclipse.papyrus.uml.diagram.ecore.feature.feature.group"/>
-        <requirement
             name="org.eclipse.papyrus.sdk.feature.feature.group"/>
         <requirement
-            name="org.eclipse.papyrus.extra.feature.feature.group"/>
+            name="org.eclipse.papyrus.sysml.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.uml.diagram.education.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.uml.diagram.ecore.feature.feature.group"/>
         <requirement
             name="epp.package.modeling"
             versionRange="[4.6.0,5.0.0)"/>
@@ -672,6 +684,8 @@
             name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
         <requirement
             name="org.eclipse.emf.compare.source.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.ecoretools.sdk.feature.group"/>
         <requirement
             name="org.eclipse.emf.ecoretools.design.feature.group"/>
         <requirement
@@ -723,11 +737,73 @@
         <requirement
             name="org.eclipse.xsd.sdk.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/neon"/>
-        <repository
-            url="http://download.eclipse.org/releases/neon"/>
-        <repository
             url="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/modeling/mdt/papyrus/components/designer/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Team Tools  (Neon)">
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.tycho.m2e.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.m2e.antlr.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.m2e.mavenarchiver.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.gitflow.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.github.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.team_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.builds.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="com.atlassian.connector.eclipse.feature.group"/>
+        <repository
+            url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+        <repository
+            url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/"/>
+        <repository
+            url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201405281449/"/>
+        <repository
+            url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
+        <repository
+            url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
+        <repository
+            url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
       </setupTask>
     </version>
     <description>The Modeling package provides tools and runtimes for building model-based applications....</description>

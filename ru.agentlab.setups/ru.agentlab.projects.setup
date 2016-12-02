@@ -2168,7 +2168,8 @@
         xsi:type="setup.targlets:TargletTask">
       <targlet
           name="${scope.project.label}"
-          activeRepositoryList="${eclipse.target.platform}">
+          activeRepositoryList="${eclipse.target.platform}"
+          includeAllPlatforms="true">
         <requirement
             name="ch.qos.logback.slf4j"
             versionRange="[1.0.7,1.1.0)"/>
@@ -2255,7 +2256,7 @@
           <repository
               url="http://agentlab.ru/p2/orbit/missing-swt-fragments/"/>
           <repository
-              url="http://download.eclipse.org/eclipse/updates/4.6/R-4.6-201606061100/"/>
+              url="http://download.eclipse.org/eclipse/updates/4.6/"/>
         </repositoryList>
       </targlet>
     </setupTask>
@@ -2265,6 +2266,8 @@
         href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/powerloom-osgi/master/setups/edu.isi.powerloom.setup#/"/>
+    <project
+        href="https://raw.githubusercontent.com/agentlab/rxtx-osgi/master/setups/ru.agentlab.rxtx.osgi.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/org.slf4j.osgi/master/setups/org.slf4j.osgi.setup#/"/>
     <project
@@ -2305,7 +2308,8 @@
             xsi:type="setup.targlets:TargletTask">
           <targlet
               name="${scope.project.label}"
-              activeRepositoryList="${eclipse.target.platform}">
+              activeRepositoryList="${eclipse.target.platform}"
+              includeAllPlatforms="true">
             <requirement
                 name="org.eclipse.fx.core.feature.feature.group"/>
             <requirement
@@ -2477,6 +2481,8 @@
                 url="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.10.v20160621"/>
             <repository
                 url="http://agentlab.ru/pd/p2/che/"/>
+            <repository
+                url="http://download.eclipse.org/releases/neon"/>
           </repositoryList>
         </targlet>
       </setupTask>
