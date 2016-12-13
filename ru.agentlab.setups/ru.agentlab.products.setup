@@ -328,16 +328,10 @@
           name="AnyEditTools.feature.group"/>
       <requirement
           name="org.eclipselabs.plugindependencies.feature.group"/>
-      <requirement
-          name="net.sf.eclipsecs.feature.group"/>
-      <requirement
-          name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
-      <repository
-          url="http://eclipse-cs.sourceforge.net/update"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -543,16 +537,10 @@
           name="AnyEditTools.feature.group"/>
       <requirement
           name="org.eclipselabs.plugindependencies.feature.group"/>
-      <requirement
-          name="net.sf.eclipsecs.feature.group"/>
-      <requirement
-          name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
-      <repository
-          url="http://eclipse-cs.sourceforge.net/update"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -925,16 +913,10 @@
           name="AnyEditTools.feature.group"/>
       <requirement
           name="org.eclipselabs.plugindependencies.feature.group"/>
-      <requirement
-          name="net.sf.eclipsecs.feature.group"/>
-      <requirement
-          name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
-      <repository
-          url="http://eclipse-cs.sourceforge.net/update"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
