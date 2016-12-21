@@ -52,9 +52,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
-        name="org.eclipse.egit.core"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
         name="org.eclipse.jdt.core">
       <setupTask
           xsi:type="setup:PreferenceTask"
@@ -1755,6 +1752,30 @@
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
+        name="org.eclipse.pde.ds.annotations">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.pde.ds.annotations/enabled"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.pde.ds.annotations/generateBundleActivationPolicyLazy"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.pde.ds.annotations/path"
+          value="OSGI-INF"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.pde.ds.annotations/validationErrorLevel"
+          value="error"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.pde.ds.annotations/validationErrorLevel.missingImplicitUnbindMethod"
+          value="error"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
         name="org.eclipse.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
@@ -1837,6 +1858,49 @@
           key="/instance/org.jboss.tools.maven.apt/org.jboss.tools.maven.apt.mode"
           value="jdt_apt"/>
     </setupTask>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      name="User Preferences">
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.core.resources"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.core.runtime"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.egit.core"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.jdt.core"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.jdt.ui"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.mylyn.team.ui"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.pde.api.tools"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.pde.ds.annotations"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.ui"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.ui.editors"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.ui.ide"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.ui.workbench"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.jboss.tools.maven.apt"/>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
