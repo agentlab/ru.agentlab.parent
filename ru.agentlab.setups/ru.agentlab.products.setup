@@ -210,7 +210,9 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201610111000"/>
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
     </version>
     <description>The Java package provides tools and runtimes for building java applications....</description>
@@ -383,6 +385,8 @@
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
             url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -595,7 +599,9 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201606221000"/>
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
     </version>
     <description>The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client, XML Editor, and Maven integration.</description>
@@ -633,6 +639,8 @@
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
             url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1218,7 +1226,9 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201610111000"/>
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
     </version>
     <version
@@ -1512,7 +1522,9 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201610111000"/>
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
     </version>
     <version
