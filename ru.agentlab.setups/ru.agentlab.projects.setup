@@ -2322,7 +2322,7 @@
           <repository
               url="http://agentlab.ru/p2/orbit/missing-swt-fragments/"/>
           <repository
-              url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+              url="http://download.eclipse.org/eclipse/updates/4.6/R-4.6.1-201609071200/"/>
         </repositoryList>
       </targlet>
     </setupTask>
