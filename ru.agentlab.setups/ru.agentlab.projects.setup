@@ -2593,6 +2593,47 @@
     </project>
     <project
         href="https://raw.githubusercontent.com/agentlab/SystemTray/master/setups/systemtray.setup#/"/>
+    <project
+        name="hi5"
+        label="Hi5 Projects">
+      <setupTask
+          xsi:type="setup.targlets:TargletTask">
+        <targlet
+            name="${scope.project.label}"
+            activeRepositoryList="${eclipse.target.platform}"
+            includeAllPlatforms="true">
+          <requirement
+              name="javax.ws.rs"/>
+          <requirement
+              name="org.apache.commons.io"/>
+          <requirement
+              name="javax.xml.rpc"/>
+          <requirement
+              name="org.eclipse.emf.texo.sdk.feature.group"/>
+          <requirement
+              name="de.metdocks.hi5.externals.feature.feature.group"/>
+          <requirement
+              name="de.metadocks.hi5.feature.feature.group"/>
+          <requirement
+              name="org.eclipse.jdt"/>
+          <requirement
+              name="org.eclipse.sdk.ide"/>
+          <requirement
+              name="org.eclipse.platform.sdk"/>
+          <repositoryList
+              name="Neon">
+            <repository
+                url="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
+            <repository
+                url="http://download.eclipse.org/modeling/emft/texo/updates/interim"/>
+            <repository
+                url="http://agentlab.ru/p2/orbit/de.metdocks.hi5.externals/"/>
+            <repository
+                url="http://agentlab.ru/p2/orbit/de.metdocks.hi5/"/>
+          </repositoryList>
+        </targlet>
+      </setupTask>
+    </project>
     <stream
         name="master"/>
     <description>OSGi versions of libraries and frameworks meant to work inside Eclipse Equinox</description>
