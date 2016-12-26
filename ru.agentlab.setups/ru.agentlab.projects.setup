@@ -2661,9 +2661,9 @@
         </configSections>
         <description>${scope.project.label}</description>
       </setupTask>
+      <stream
+          name="master"/>
     </project>
-    <stream
-        name="master"/>
     <description>OSGi versions of libraries and frameworks meant to work inside Eclipse Equinox</description>
   </project>
   <project href="https://raw.githubusercontent.com/agentlab/draw.io/master/setups/draw.io.setup#/"/>
