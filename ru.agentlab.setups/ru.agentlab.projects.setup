@@ -2432,6 +2432,8 @@
                 url="http://download.eclipse.org/efxclipse/runtime-nightly/site"/>
             <repository
                 url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+            <repository
+                url="http://download.eclipse.org/eclipse/updates/4.6/R-4.6-201606061100/"/>
           </repositoryList>
         </targlet>
       </setupTask>
