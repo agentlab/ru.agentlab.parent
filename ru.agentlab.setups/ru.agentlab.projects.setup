@@ -2337,6 +2337,8 @@
         href="https://raw.githubusercontent.com/agentlab/rxtx-osgi/master/setups/ru.agentlab.rxtx.osgi.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/org.slf4j.osgi/master/setups/org.slf4j.osgi.setup#/"/>
+	<project
+        href="https://raw.githubusercontent.com/agentlab/net.sf.tweety/master/setups/net.sf.tweety.setup#/"/>
     <project
         name="e4"
         label="OSGi Eclipse e4 RCP Projects">
