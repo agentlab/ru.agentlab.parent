@@ -2621,6 +2621,20 @@
               name="org.eclipse.sdk.ide"/>
           <requirement
               name="org.eclipse.platform.sdk"/>
+          <requirement
+              name="org.eclipse.xsd.feature.group"/>
+          <requirement
+              name="org.eclipse.emf.sdk.feature.group"/>
+          <requirement
+              name="org.eclipse.xtend.feature.group"/>
+          <requirement
+              name="org.eclipse.xtext.runtime.feature.group"/>
+          <requirement
+              name="org.eclipse.emf.edit.feature.group"/>
+          <requirement
+              name="org.eclipse.emf.ecore.feature.group"/>
+          <requirement
+              name="org.eclipse.platform.ide"/>
           <repositoryList
               name="Neon">
             <repository
@@ -2631,6 +2645,8 @@
                 url="http://agentlab.ru/p2/orbit/de.metdocks.hi5.externals/"/>
             <repository
                 url="http://agentlab.ru/p2/orbit/de.metdocks.hi5/"/>
+            <repository
+                url="http://download.eclipse.org/releases/neon"/>
           </repositoryList>
         </targlet>
       </setupTask>
@@ -2664,6 +2680,8 @@
       <stream
           name="master"/>
     </project>
+    <stream
+        name="master"/>
     <description>OSGi versions of libraries and frameworks meant to work inside Eclipse Equinox</description>
   </project>
   <project href="https://raw.githubusercontent.com/agentlab/draw.io/master/setups/draw.io.setup#/"/>
