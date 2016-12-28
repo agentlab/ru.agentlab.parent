@@ -2369,6 +2369,8 @@
           </repositoryList>
         </targlet>
       </setupTask>
+	  <project
+        href="https://raw.githubusercontent.com/agentlab/hi5/master/setups/de.metadocks.hi5.setup#/"/>
       <project
           name="fx"
           label="OSGi Eclipse e4 RCP JavaFX Projects"
