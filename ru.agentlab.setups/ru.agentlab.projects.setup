@@ -2348,8 +2348,7 @@
             name="${scope.project.label}"
             activeRepositoryList="${eclipse.target.platform}">
           <requirement
-              name="org.eclipse.e4.rcp.feature.group"
-              versionRange="[1.5.0,1.5.1)"/>
+              name="org.eclipse.e4.rcp.feature.group"/>
           <requirement
               name="org.eclipse.e4.tools.bundle.spy.feature.feature.group"/>
           <requirement
@@ -2366,11 +2365,13 @@
               name="Neon">
             <repository
                 url="http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest"/>
+            <repository
+                url="http://download.eclipse.org/releases/neon"/>
           </repositoryList>
         </targlet>
       </setupTask>
-	  <project
-        href="https://raw.githubusercontent.com/agentlab/hi5/master/setups/de.metadocks.hi5.setup#/"/>
+      <project
+          href="https://raw.githubusercontent.com/agentlab/hi5/master/setups/de.metadocks.hi5.setup#/"/>
       <project
           name="fx"
           label="OSGi Eclipse e4 RCP JavaFX Projects"
