@@ -2333,6 +2333,8 @@
         href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/powerloom-osgi/master/setups/edu.isi.powerloom.setup#/"/>
+	<project
+        href="https://raw.githubusercontent.com/agentlab/org.glassfish.jersey/master/setups/org.glassfish.jersey.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/rxtx-osgi/master/setups/ru.agentlab.rxtx.osgi.setup#/"/>
     <project
