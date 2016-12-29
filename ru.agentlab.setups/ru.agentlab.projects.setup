@@ -2333,7 +2333,7 @@
         href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/powerloom-osgi/master/setups/edu.isi.powerloom.setup#/"/>
-	<project
+    <project
         href="https://raw.githubusercontent.com/agentlab/org.glassfish.jersey/master/setups/org.glassfish.jersey.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/rxtx-osgi/master/setups/ru.agentlab.rxtx.osgi.setup#/"/>
@@ -2560,7 +2560,7 @@
             <repository
                 url="http://agentlab.ru/pd/p2/che/"/>
             <repository
-                url="http://download.eclipse.org/releases/neon"/>
+                url="http://download.eclipse.org/releases/neon/201610111000"/>
           </repositoryList>
         </targlet>
       </setupTask>
