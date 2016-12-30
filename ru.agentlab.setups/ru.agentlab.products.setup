@@ -41,6 +41,85 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
+      label="m2e">
+    <requirement
+        name="org.eclipse.m2e.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.m2e.logback.feature.feature.group"/>
+    <requirement
+        name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
+    <requirement
+        name="org.sonatype.m2e.antlr.feature.feature.group"/>
+    <requirement
+        name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
+    <requirement
+        name="org.sonatype.m2e.mavenarchiver.feature.feature.group"/>
+    <requirement
+        name="org.sonatype.tycho.m2e.feature.feature.group"/>
+    <requirement
+        name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+    <requirement
+        name="org.jboss.tools.maven.apt.feature.feature.group"/>
+    <repository
+        url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+    <repository
+        url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/"/>
+    <repository
+        url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201405281449/"/>
+    <repository
+        url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
+    <repository
+        url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
+    <repository
+        url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+    <repository
+        url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="team">
+    <requirement
+        name="org.eclipse.egit.feature.group"/>
+    <requirement
+        name="org.eclipse.egit.gitflow.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.egit.mylyn.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.builds.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.context_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.git.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.github.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.hudson.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.ide_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.java_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.pde_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.team_feature.feature.group"/>
+    <requirement
+        name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+    <requirement
+        name="com.atlassian.connector.eclipse.feature.group"/>
+    <repository
+        url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
+    <description></description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
       disabled="true">
     <requirement
         name="net.sf.eclipsecs.feature.group"/>
@@ -72,79 +151,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="m2e">
-      <requirement
-          name="org.eclipse.m2e.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.m2e.logback.feature.feature.group"/>
-      <requirement
-          name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.antlr.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.mavenarchiver.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.tycho.m2e.feature.feature.group"/>
-      <requirement
-          name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-      <requirement
-          name="org.jboss.tools.maven.apt.feature.feature.group"/>
-      <repository
-          url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201405281449/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
-      <repository
-          url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-      <repository
-          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="team">
-      <requirement
-          name="org.eclipse.egit.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.gitflow.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.mylyn.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.builds.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.context_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.git.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.github.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.hudson.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.ide_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.java_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.pde_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.team_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-      <requirement
-          name="com.atlassian.connector.eclipse.feature.group"/>
+        label="client">
       <requirement
           name="org.eclipse.recommenders.rcp.feature.feature.group"/>
       <requirement
@@ -153,28 +160,20 @@
           name="org.eclipse.recommenders.news.rcp.feature.feature.group"/>
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-      <repository
-          url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
-      <repository
-          url="http://download.eclipse.org/recommenders/updates/stable/"/>
-      <description></description>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="client">
       <requirement
           name="org.eclipse.ajdt.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="logback">
+      <requirement
+          name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
+          url="http://download.eclipse.org/recommenders/updates/stable/"/>
+      <repository
+          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+      <repository
+          url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
+      <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
-      <description></description>
     </setupTask>
     <version
         name="latest"
@@ -228,79 +227,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="m2e">
-      <requirement
-          name="org.eclipse.m2e.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.m2e.logback.feature.feature.group"/>
-      <requirement
-          name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.antlr.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.mavenarchiver.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.tycho.m2e.feature.feature.group"/>
-      <requirement
-          name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-      <requirement
-          name="org.jboss.tools.maven.apt.feature.feature.group"/>
-      <repository
-          url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201405281449/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
-      <repository
-          url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-      <repository
-          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="team">
-      <requirement
-          name="org.eclipse.egit.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.gitflow.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.mylyn.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.builds.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.context_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.git.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.github.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.hudson.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.ide_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.java_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.pde_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.team_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-      <requirement
-          name="com.atlassian.connector.eclipse.feature.group"/>
+        label="client">
       <requirement
           name="org.eclipse.recommenders.rcp.feature.feature.group"/>
       <requirement
@@ -309,28 +236,20 @@
           name="org.eclipse.recommenders.news.rcp.feature.feature.group"/>
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-      <repository
-          url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
-      <repository
-          url="http://download.eclipse.org/recommenders/updates/stable/"/>
-      <description></description>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="client">
       <requirement
           name="org.eclipse.ajdt.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="logback">
+      <requirement
+          name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
+          url="http://download.eclipse.org/recommenders/updates/stable/"/>
+      <repository
+          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+      <repository
+          url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
+      <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
-      <description></description>
     </setupTask>
     <version
         name="latest"
@@ -427,79 +346,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="m2e">
-      <requirement
-          name="org.eclipse.m2e.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.m2e.logback.feature.feature.group"/>
-      <requirement
-          name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.antlr.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.mavenarchiver.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.tycho.m2e.feature.feature.group"/>
-      <requirement
-          name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-      <requirement
-          name="org.jboss.tools.maven.apt.feature.feature.group"/>
-      <repository
-          url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201405281449/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
-      <repository
-          url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-      <repository
-          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="team">
-      <requirement
-          name="org.eclipse.egit.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.gitflow.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.mylyn.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.builds.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.context_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.git.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.github.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.hudson.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.ide_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.java_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.pde_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.team_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-      <requirement
-          name="com.atlassian.connector.eclipse.feature.group"/>
+        label="client">
       <requirement
           name="org.eclipse.recommenders.rcp.feature.feature.group"/>
       <requirement
@@ -508,28 +355,20 @@
           name="org.eclipse.recommenders.news.rcp.feature.feature.group"/>
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-      <repository
-          url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
-      <repository
-          url="http://download.eclipse.org/recommenders/updates/stable/"/>
-      <description></description>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="client">
       <requirement
           name="org.eclipse.ajdt.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="logback">
+      <requirement
+          name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
+          url="http://download.eclipse.org/recommenders/updates/stable/"/>
+      <repository
+          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+      <repository
+          url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
+      <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
-      <description></description>
     </setupTask>
     <version
         name="latest.released"
@@ -795,79 +634,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="m2e">
-      <requirement
-          name="org.eclipse.m2e.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.m2e.logback.feature.feature.group"/>
-      <requirement
-          name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.antlr.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.m2e.mavenarchiver.feature.feature.group"/>
-      <requirement
-          name="org.sonatype.tycho.m2e.feature.feature.group"/>
-      <requirement
-          name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-      <requirement
-          name="org.jboss.tools.maven.apt.feature.feature.group"/>
-      <repository
-          url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/"/>
-      <repository
-          url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201405281449/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
-      <repository
-          url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
-      <repository
-          url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-      <repository
-          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="team">
-      <requirement
-          name="org.eclipse.egit.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.gitflow.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.egit.mylyn.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.builds.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.context_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.git.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.github.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.hudson.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.ide_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.java_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.pde_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.team_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-      <requirement
-          name="com.atlassian.connector.eclipse.feature.group"/>
+        label="client">
       <requirement
           name="org.eclipse.recommenders.rcp.feature.feature.group"/>
       <requirement
@@ -876,28 +643,20 @@
           name="org.eclipse.recommenders.news.rcp.feature.feature.group"/>
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-      <repository
-          url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
-      <repository
-          url="http://download.eclipse.org/recommenders/updates/stable/"/>
-      <description></description>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="client">
       <requirement
           name="org.eclipse.ajdt.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="logback">
+      <requirement
+          name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
+          url="http://download.eclipse.org/recommenders/updates/stable/"/>
+      <repository
+          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+      <repository
+          url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
+      <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
-      <description></description>
     </setupTask>
     <version
         name="latest"
