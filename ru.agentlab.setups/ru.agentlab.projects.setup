@@ -2331,6 +2331,8 @@
         href="https://raw.githubusercontent.com/agentlab/ambry/mvn/setups/com.github.ambry.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
+	<project
+        href="https://raw.githubusercontent.com/agentlab/ru.agentlab.mystemwrapper/master/setups/setup-ru.agentlab.mystemwrapper/ru.agentlab.mystemwrapper.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/powerloom-osgi/master/setups/edu.isi.powerloom.setup#/"/>
     <project
