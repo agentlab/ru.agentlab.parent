@@ -2592,6 +2592,8 @@
           </targlet>
         </setupTask>
         <project
+            href="https://raw.githubusercontent.com/agentlab/OomphConfigService/master/setups/com.bmstu.coursework.oomph.setup/com.bmstu.coursework.oomph.setup#/"/>
+		<project
             href="https://raw.githubusercontent.com/agentlab/uss/master/setups/UserStorageService.setup#/"/>
         <stream
             name="master"/>
