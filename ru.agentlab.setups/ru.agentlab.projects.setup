@@ -2222,7 +2222,7 @@
       targetName="Modular API Baseline Target">
     <predecessor
         xsi:type="setup.targlets:TargletTask"
-        href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/'api.baseline.targlet'"/>
+        href="index:/org.eclipse.setup#//@projectCatalogs[name='ru.agentlab']/'api.baseline.targlet'"/>
     <description>An API baseline based on the target platform named 'Modular API Baseline Target'</description>
   </setupTask>
   <project href="user:/ru.agentlab.projects.setup?name='user.project',label='&lt;User>',description='A container project for local user projects that are virtual members of the AgentLab.ru project catalog'#/"/>
