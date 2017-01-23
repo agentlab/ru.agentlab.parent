@@ -2706,5 +2706,6 @@
     <description>OSGi versions of libraries and frameworks meant to work inside Eclipse Equinox</description>
   </project>
   <project href="https://raw.githubusercontent.com/agentlab/draw.io/master/setups/draw.io.setup#/"/>
+  <project href="https://raw.githubusercontent.com/agentlab/PowerLoomDSL/master/setups/ru.agentlab.powerloom.dsl.setup#/"/>
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>
