@@ -1862,49 +1862,6 @@
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
-      name="User Preferences">
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.core.resources"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.core.runtime"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.egit.core"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.jdt.core"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.jdt.ui"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.mylyn.team.ui"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.pde.api.tools"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.pde.ds.annotations"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.ui"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.ui.editors"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.ui.ide"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.eclipse.ui.workbench"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="org.jboss.tools.maven.apt"/>
-  </setupTask>
-  <setupTask
-      xsi:type="setup:CompoundTask"
       name="Global Variables">
     <setupTask
         xsi:type="setup:StringSubstitutionTask"
@@ -2105,61 +2062,6 @@
   </setupTask>
   <setupTask
       xsi:type="setup.targlets:TargletTask"
-      disabled="true">
-    <targlet
-        name="Eclipse Platform"
-        activeRepositoryList="${eclipse.target.platform}">
-      <repositoryList
-          name="None"/>
-      <repositoryList
-          name="Oxygen">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7-I-builds"/>
-      </repositoryList>
-      <repositoryList
-          name="Neon">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.6"/>
-      </repositoryList>
-      <repositoryList
-          name="Mars">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.5"/>
-      </repositoryList>
-      <repositoryList
-          name="Luna">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.4"/>
-      </repositoryList>
-      <repositoryList
-          name="Kepler">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.3"/>
-      </repositoryList>
-      <repositoryList
-          name="Juno">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.2"/>
-      </repositoryList>
-      <repositoryList
-          name="Indigo">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/3.7"/>
-      </repositoryList>
-      <repositoryList
-          name="Helios">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/3.6"/>
-      </repositoryList>
-      <repositoryList
-          name="Galileo">
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/3.5"/>
-      </repositoryList>
-    </targlet>
-  </setupTask>
-  <setupTask
-      xsi:type="setup.targlets:TargletTask"
       id="api.baseline.targlet"
       targetName="Modular API Baseline Target"
       activateTarget="false">
@@ -2218,11 +2120,9 @@
   </setupTask>
   <setupTask
       xsi:type="pde:APIBaselineFromTargetTask"
+      predecessor="api.baseline.targlet"
       name="Modular API Baseline"
       targetName="Modular API Baseline Target">
-    <predecessor
-        xsi:type="setup.targlets:TargletTask"
-        href="index:/org.eclipse.setup#//@projectCatalogs[name='ru.agentlab']/'api.baseline.targlet'"/>
     <description>An API baseline based on the target platform named 'Modular API Baseline Target'</description>
   </setupTask>
   <project href="user:/ru.agentlab.projects.setup?name='user.project',label='&lt;User>',description='A container project for local user projects that are virtual members of the AgentLab.ru project catalog'#/"/>
@@ -2331,7 +2231,7 @@
         href="https://raw.githubusercontent.com/agentlab/ambry/mvn/setups/com.github.ambry.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
-	<project
+    <project
         href="https://raw.githubusercontent.com/agentlab/ru.agentlab.mystemwrapper/master/setups/setup-ru.agentlab.mystemwrapper/ru.agentlab.mystemwrapper.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/powerloom-osgi/master/setups/edu.isi.powerloom.setup#/"/>
@@ -2593,7 +2493,7 @@
         </setupTask>
         <project
             href="https://raw.githubusercontent.com/agentlab/OomphConfigService/master/setups/com.bmstu.coursework.oomph.setup/com.bmstu.coursework.oomph.setup#/"/>
-		<project
+        <project
             href="https://raw.githubusercontent.com/agentlab/uss/master/setups/UserStorageService.setup#/"/>
         <stream
             name="master"/>
