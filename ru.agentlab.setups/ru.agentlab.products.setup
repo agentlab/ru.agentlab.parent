@@ -57,8 +57,6 @@
     <requirement
         name="org.sonatype.tycho.m2e.feature.feature.group"/>
     <requirement
-        name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-    <requirement
         name="org.jboss.tools.maven.apt.feature.feature.group"/>
     <repository
         url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
@@ -70,8 +68,6 @@
         url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
     <repository
         url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
-    <repository
-        url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
     <repository
         url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt"/>
   </setupTask>
@@ -118,28 +114,6 @@
         url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
     <description></description>
   </setupTask>
-  <setupTask
-      xsi:type="setup.p2:P2Task"
-      disabled="true">
-    <requirement
-        name="net.sf.eclipsecs.feature.group"/>
-    <requirement
-        name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
-    <requirement
-        name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
-    <requirement
-        name="JDepend4Eclipse.feature.group"/>
-    <requirement
-        name="zipeditor.feature.group"/>
-    <requirement
-        name="AnyEditTools.feature.group"/>
-    <requirement
-        name="org.eclipselabs.plugindependencies.feature.group"/>
-    <repository
-        url="http://eclipse-cs.sourceforge.net/update"/>
-    <repository
-        url="http://andrei.gmxhome.de/eclipse/"/>
-  </setupTask>
   <product name="eclipse.java"
       label="Eclipse Java IDE with Maven and Tools">
     <annotation
@@ -161,19 +135,41 @@
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
       <requirement
-          name="org.eclipse.ajdt.feature.group"/>
-      <requirement
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/recommenders/updates/stable/"/>
       <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-      <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="loskutov-utils">
+      <requirement
+          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+      <requirement
+          name="zipeditor.feature.group"/>
+      <requirement
+          name="AnyEditTools.feature.group"/>
+      <requirement
+          name="org.eclipselabs.plugindependencies.feature.group"/>
+      <repository
+          url="http://andrei.gmxhome.de/eclipse/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="checkstyle">
+      <requirement
+          name="net.sf.eclipsecs.feature.group"/>
+      <requirement
+          name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
+      <repository
+          url="http://master.dl.sourceforge.net/project/eclipse-cs/updatesite/7.3.0/"/>
+      <repository
+          url="http://sevntu-checkstyle.github.com/sevntu.checkstyle/update-site/"/>
     </setupTask>
     <version
         name="latest"
@@ -213,6 +209,18 @@
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="ajdt">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
     </version>
     <description>The Java package provides tools and runtimes for building java applications....</description>
   </product>
@@ -237,19 +245,41 @@
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
       <requirement
-          name="org.eclipse.ajdt.feature.group"/>
-      <requirement
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/recommenders/updates/stable/"/>
       <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-      <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="loskutov-utils">
+      <requirement
+          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+      <requirement
+          name="zipeditor.feature.group"/>
+      <requirement
+          name="AnyEditTools.feature.group"/>
+      <requirement
+          name="org.eclipselabs.plugindependencies.feature.group"/>
+      <repository
+          url="http://andrei.gmxhome.de/eclipse/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="checkstyle">
+      <requirement
+          name="net.sf.eclipsecs.feature.group"/>
+      <requirement
+          name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
+      <repository
+          url="http://master.dl.sourceforge.net/project/eclipse-cs/updatesite/7.3.0/"/>
+      <repository
+          url="http://sevntu-checkstyle.github.com/sevntu.checkstyle/update-site/"/>
     </setupTask>
     <version
         name="latest"
@@ -294,6 +324,18 @@
             url="http://download.eclipse.org/releases/neon"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="ajdt">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -356,19 +398,41 @@
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
       <requirement
-          name="org.eclipse.ajdt.feature.group"/>
-      <requirement
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/recommenders/updates/stable/"/>
       <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-      <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="loskutov-utils">
+      <requirement
+          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+      <requirement
+          name="zipeditor.feature.group"/>
+      <requirement
+          name="AnyEditTools.feature.group"/>
+      <requirement
+          name="org.eclipselabs.plugindependencies.feature.group"/>
+      <repository
+          url="http://andrei.gmxhome.de/eclipse/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="checkstyle">
+      <requirement
+          name="net.sf.eclipsecs.feature.group"/>
+      <requirement
+          name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
+      <repository
+          url="http://master.dl.sourceforge.net/project/eclipse-cs/updatesite/7.3.0/"/>
+      <repository
+          url="http://sevntu-checkstyle.github.com/sevntu.checkstyle/update-site/"/>
     </setupTask>
     <version
         name="latest.released"
@@ -418,6 +482,18 @@
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="ajdt">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
     </version>
     <description>The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client, XML Editor, and Maven integration.</description>
   </product>
@@ -450,8 +526,8 @@
             name="org.eclipse.sdk.feature.group"/>
         <requirement
             name="org.eclipse.jdt.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/technology/epp/packages/neon"/>
+        <requirement
+            name="org.eclipse.emf.cdo.feature.group"/>
         <repository
             url="http://download.eclipse.org/releases/neon"/>
         <repository
@@ -461,19 +537,13 @@
           xsi:type="setup.p2:P2Task"
           label="Eclipse Modeling Tools (Neon)">
         <requirement
-            name="org.eclipse.papyrus.designer.languages.java.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.papyrus.designer.languages.common.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.papyrus.layers.feature.feature.group"/>
+            name="org.eclipse.core.runtime.feature.feature.group"/>
         <requirement
             name="org.eclipse.papyrus.sdk.feature.feature.group"/>
         <requirement
+            name="org.eclipse.papyrus.extra.cdo.feature.feature.group"/>
+        <requirement
             name="org.eclipse.papyrus.sysml.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.papyrus.uml.diagram.education.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.papyrus.uml.diagram.ecore.feature.feature.group"/>
         <requirement
             name="epp.package.modeling"
             versionRange="[4.6.0,5.0.0)"/>
@@ -490,7 +560,13 @@
         <requirement
             name="org.eclipse.egit.feature.group"/>
         <requirement
-            name="org.eclipse.emf.cdo.epp.feature.group"/>
+            name="org.eclipse.emf.cdo.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.cdo.compare.feature.group"/>
+        <requirement
+            name="org.eclipse.net4j.feature.group"/>
+        <requirement
+            name="org.eclipse.net4j.db.h2.feature.group"/>
         <requirement
             name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
         <requirement
@@ -505,10 +581,6 @@
             name="org.eclipse.emf.ecoretools.design.feature.group"/>
         <requirement
             name="org.eclipse.emf.ecoretools.explorer.contextual.feature.group"/>
-        <requirement
-            name="org.eclipse.emf.ecp.sdk.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.emf.emfstore.sdk.feature.feature.group"/>
         <requirement
             name="org.eclipse.emf.parsley.sdk.feature.group"/>
         <requirement
@@ -552,9 +624,7 @@
         <requirement
             name="org.eclipse.xsd.sdk.feature.group"/>
         <repository
-            url="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/neon"/>
-        <repository
-            url="http://download.eclipse.org/modeling/mdt/papyrus/components/designer/"/>
+            url="http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/neon"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -620,6 +690,252 @@
         <repository
             url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="PapyrusComponents (Neon)">
+        <requirement
+            name="org.eclipse.papyrus.layers.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.uml.diagram.education.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.uml.diagram.ecore.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.designer.languages.java.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.designer.languages.common.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/modeling/mdt/papyrus/components/designer/"/>
+      </setupTask>
+    </version>
+    <description>The Modeling package provides tools and runtimes for building model-based applications....</description>
+  </product>
+  <product name="eclipse.modeling.architect"
+      label="Eclipse Architecture Analysis Tool">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+      <detail
+          key="imageURI">
+        <value>http://www.eclipse.org/downloads/images/modeling.png</value>
+      </detail>
+    </annotation>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="dep-analysis">
+      <requirement
+          name="JDepend4Eclipse.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.ide.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.tools.ide.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.tools.ide.pde.feature.group"/>
+      <repository
+          url="http://andrei.gmxhome.de/eclipse/"/>
+      <repository
+          url="http://update.stan4j.com/ide"/>
+    </setupTask>
+    <version
+        name="latest"
+        label="Latest Release (Neon)"
+        requiredJavaVersion="1.8">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+        <detail
+            key="siteURI">
+          <value>https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/neonr</value>
+        </detail>
+      </annotation>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Developer IDE  (Neon)">
+        <requirement
+            name="org.eclipse.pde.feature.group"/>
+        <requirement
+            name="org.eclipse.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.cdo.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Eclipse Modeling Tools (Neon)">
+        <requirement
+            name="org.eclipse.core.runtime.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.extra.cdo.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.sysml.feature.feature.group"/>
+        <requirement
+            name="epp.package.modeling"
+            versionRange="[4.6.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.platform.feature.group"
+            versionRange="[4.6.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.rcp.feature.group"
+            versionRange="[4.6.0,5.0.0)"/>
+        <requirement
+            name="org.eclipse.amalgam.discovery.feature.group"/>
+        <requirement
+            name="org.eclipse.e4.core.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.cdo.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.cdo.compare.feature.group"/>
+        <requirement
+            name="org.eclipse.net4j.feature.group"/>
+        <requirement
+            name="org.eclipse.net4j.db.h2.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.compare.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.compare.source.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.ecoretools.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.ecoretools.design.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.ecoretools.explorer.contextual.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.parsley.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.parsley.sdk.source.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.query.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.transaction.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.validation.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.gef.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.gmf.runtime.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.ocl.all.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.pde.feature.group"/>
+        <requirement
+            name="org.eclipse.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.uml2.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.xsd.sdk.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/neon"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Team Tools  (Neon)">
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.tycho.m2e.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.m2e.antlr.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.m2e.mavenarchiver.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.gitflow.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.github.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.team_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.builds.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="com.atlassian.connector.eclipse.feature.group"/>
+        <repository
+            url="http://ianbrandt.github.io/m2e-maven-dependency-plugin/"/>
+        <repository
+            url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/LATEST/"/>
+        <repository
+            url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-antlr/0.15.0/N/0.15.0.201405281449/"/>
+        <repository
+            url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201405280027/"/>
+        <repository
+            url="https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.0/N/0.17.0./"/>
+        <repository
+            url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="PapyrusComponents (Neon)">
+        <requirement
+            name="org.eclipse.papyrus.layers.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.uml.diagram.education.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.uml.diagram.ecore.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.designer.languages.java.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.papyrus.designer.languages.common.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/modeling/mdt/papyrus/components/designer/"/>
+      </setupTask>
     </version>
     <description>The Modeling package provides tools and runtimes for building model-based applications....</description>
   </product>
@@ -644,19 +960,41 @@
       <requirement
           name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
       <requirement
-          name="org.eclipse.ajdt.feature.group"/>
-      <requirement
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/recommenders/updates/stable/"/>
       <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-      <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="loskutov-utils">
+      <requirement
+          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+      <requirement
+          name="zipeditor.feature.group"/>
+      <requirement
+          name="AnyEditTools.feature.group"/>
+      <requirement
+          name="org.eclipselabs.plugindependencies.feature.group"/>
+      <repository
+          url="http://andrei.gmxhome.de/eclipse/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="checkstyle">
+      <requirement
+          name="net.sf.eclipsecs.feature.group"/>
+      <requirement
+          name="com.github.sevntu.checkstyle.checks.feature.feature.group"/>
+      <repository
+          url="http://master.dl.sourceforge.net/project/eclipse-cs/updatesite/7.3.0/"/>
+      <repository
+          url="http://sevntu-checkstyle.github.com/sevntu.checkstyle/update-site/"/>
     </setupTask>
     <version
         name="latest"
@@ -1395,6 +1733,120 @@
       </setupTask>
     </version>
     <description>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.</description>
+  </product>
+  <product name="cdo-server"
+      label="CDO Server">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+      <detail
+          key="folderName">
+        <value>eclipse</value>
+      </detail>
+      <detail
+          key="folderName.macosx">
+        <value>Eclipse</value>
+      </detail>
+    </annotation>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="${scope.product.label}">
+      <requirement
+          name="org.eclipse.platform.ide"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.cdo.server.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.cdo.server.db.feature.group"/>
+      <requirement
+          name="org.eclipse.net4j.db.feature.group"/>
+      <requirement
+          name="org.eclipse.net4j.db.h2.feature.group"/>
+      <requirement
+          name="org.eclipse.net4j"/>
+      <requirement
+          name="org.eclipse.net4j.jvm"/>
+      <requirement
+          name="org.eclipse.net4j.tcp"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Dnet4j.config"
+        value="=${installation.location/}${installation.relativeProductFolder}"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Xmx"
+        value="1g"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-console"/>
+    <setupTask
+        xsi:type="setup:TextModifyTask"
+        url="${installation.location|uri}/${installation.relativeProductFolder}/configuration/config.ini"
+        encoding="ISO-8859-1">
+      <modification
+          pattern="eclipse\.application=([^\r\n]*)">
+        <substitution>org.eclipse.emf.cdo.server.app</substitution>
+      </modification>
+      <modification
+          pattern="(osgi\.splashPath=)">
+        <substitution>XXXosgi.splashPath=</substitution>
+      </modification>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:ResourceCreationTask"
+        content="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;cdoServer>&#xD;&#xA;&#xD;&#xA;  &lt;acceptor type=&quot;tcp&quot; listenAddr=&quot;0.0.0.0&quot; port=&quot;2036&quot;/>&#xD;&#xA;&#xD;&#xA;  &lt;repository name=&quot;repo1&quot;>&#xD;&#xA;    &lt;property name=&quot;overrideUUID&quot; value=&quot;&quot;/>&#xD;&#xA;    &lt;property name=&quot;supportingAudits&quot; value=&quot;true&quot;/>&#xD;&#xA;    &lt;property name=&quot;supportingBranches&quot; value=&quot;true&quot;/>&#xD;&#xA;    &lt;property name=&quot;ensureReferentialIntegrity&quot; value=&quot;false&quot;/>&#xD;&#xA;    &lt;property name=&quot;allowInterruptRunningQueries&quot; value=&quot;true&quot;/>&#xD;&#xA;    &lt;property name=&quot;idGenerationLocation&quot; value=&quot;STORE&quot;/>&#xD;&#xA;    &lt;property name=&quot;serializeCommits&quot; value=&quot;false&quot;/>&#xD;&#xA;    &lt;property name=&quot;optimisticLockingTimeout&quot; value=&quot;10000&quot;/>&#xD;&#xA;&#xD;&#xA;    &lt;store type=&quot;db&quot;>&#xD;&#xA;      &lt;property name=&quot;connectionKeepAlivePeriod&quot; value=&quot;60&quot;/>&#xD;&#xA;      &lt;property name=&quot;readerPoolCapacity&quot; value=&quot;20&quot;/>&#xD;&#xA;      &lt;property name=&quot;writerPoolCapacity&quot; value=&quot;20&quot;/>&#xD;&#xA;&#xD;&#xA;      &lt;mappingStrategy type=&quot;horizontal&quot;>&#xD;&#xA;        &lt;property name=&quot;qualifiedNames&quot; value=&quot;true&quot;/>&#xD;&#xA;      &lt;/mappingStrategy>&#xD;&#xA;&#xD;&#xA;      &lt;dbAdapter name=&quot;h2&quot;/>&#xD;&#xA;&#xD;&#xA;      &lt;dataSource&#xD;&#xA;        class=&quot;org.h2.jdbcx.JdbcDataSource&quot;&#xD;&#xA;        URL=&quot;jdbc:h2:${installation.location}/${installation.relativeProductFolder}/database/repo1&quot;/>&#xD;&#xA;    &lt;/store>&#xD;&#xA;  &lt;/repository>&#xD;&#xA;&lt;/cdoServer>&#xD;&#xA;"
+        targetURL="${installation.location|uri}/${installation.relativeProductFolder}/cdo-server.xml"
+        encoding="UTF-8"/>
+    <version
+        name="oxygen"
+        label="Oxygen"
+        requiredJavaVersion="1.7">
+      <setupTask
+          xsi:type="setup.p2:P2Task">
+        <repository
+            url="http://download.eclipse.org/releases/oxygen"/>
+        <repository
+            url="http://download.eclipse.org/modeling/emf/cdo/updates/integration"/>
+      </setupTask>
+    </version>
+    <version
+        name="neon"
+        label="Neon"
+        requiredJavaVersion="1.7">
+      <setupTask
+          xsi:type="setup.p2:P2Task">
+        <repository
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+      </setupTask>
+    </version>
+    <version
+        name="mars"
+        label="Mars"
+        requiredJavaVersion="1.7">
+      <setupTask
+          xsi:type="setup.p2:P2Task">
+        <repository
+            url="http://download.eclipse.org/releases/mars"/>
+      </setupTask>
+    </version>
+    <version
+        name="luna"
+        label="Luna"
+        requiredJavaVersion="1.7">
+      <setupTask
+          xsi:type="setup.p2:P2Task">
+        <repository
+            url="http://download.eclipse.org/releases/luna"/>
+      </setupTask>
+    </version>
+    <description>A headless CDO Model Repository server.</description>
   </product>
   <description>AgentLab Tools which are useful in our projects development</description>
 </setup:ProductCatalog>
