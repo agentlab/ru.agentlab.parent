@@ -36,8 +36,12 @@
       xsi:type="setup.p2:P2Task">
     <requirement
         name="org.eclipse.oomph.setup.feature.group"/>
+    <requirement
+        name="com.mousefeed.feature.feature.group"/>
     <repository
         url="${oomph.update.url}"/>
+    <repository
+        url="http://download.sigasi.com/updates/mousefeed/"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
