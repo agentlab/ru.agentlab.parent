@@ -2223,7 +2223,7 @@
           <repository
               url="http://agentlab.ru/p2/orbit/missing-swt-fragments/updates/nightly/"/>
           <repository
-              url="http://download.eclipse.org/eclipse/updates/4.6/R-4.6.1-201609071200/"/>
+              url="http://download.eclipse.org/eclipse/updates/4.6/"/>
         </repositoryList>
       </targlet>
     </setupTask>
@@ -2342,8 +2342,19 @@
                 url="http://download.eclipse.org/efxclipse/runtime-nightly/site"/>
             <repository
                 url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+          </repositoryList>
+        </targlet>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.targlets:TargletTask"
+          disabled="true">
+        <targlet
+            name="qwer">
+          <repositoryList>
             <repository
                 url="http://download.eclipse.org/eclipse/updates/4.6/R-4.6-201606061100/"/>
+            <repository
+                url="http://download.eclipse.org/eclipse/updates/4.6/R-4.6.1-201609071200/"/>
           </repositoryList>
         </targlet>
       </setupTask>
