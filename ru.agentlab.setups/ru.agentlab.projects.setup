@@ -2311,6 +2311,8 @@
             href="https://raw.githubusercontent.com/agentlab/ru.agentlab.calendar/master/setups/ru.agentlab.calendar.setup#/"/>
         <project
             href="https://raw.githubusercontent.com/agentlab/WordNetEditor/master/setups/ru.agentlab.wordnet.editor.setup#/"/>
+		<project
+            href="https://raw.githubusercontent.com/agentlab/E4WordNetEditor/master/setups/setup-ru.agentlab.wordnet.e4editor/ru.agentlab.wordnet.e4editor.setup#/"/>
         <stream
             name="master"/>
         <description>Eclipse e4 RCP GUI applications with JavaFX</description>
