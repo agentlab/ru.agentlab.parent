@@ -2300,7 +2300,7 @@
           </repositoryList>
         </targlet>
       </setupTask>
-	  <project
+      <project
           href="https://raw.githubusercontent.com/agentlab/gef5_examples/master/setups/setup-org.eclipse.gef.mvc.examples/org.eclipse.gef.mvc.examples.setup#/"/>
       <project
           href="https://raw.githubusercontent.com/agentlab/hi5/master/setups/de.metadocks.hi5.setup#/"/>
@@ -2438,8 +2438,6 @@
           <requirement
               name="org.eclipse.core.runtime.feature.feature.group"/>
           <requirement
-              name="org.eclipse.ecf.core.feature.group"/>
-          <requirement
               name="org.eclipse.equinox.http.jetty"/>
           <requirement
               name="org.eclipse.equinox.http.servlet"/>
@@ -2524,9 +2522,9 @@
               name="${scope.project.label}"
               activeRepositoryList="${eclipse.target.platform}">
             <requirement
-                name="org.apache.httpcomponents.httpclient.source"/>
+                name="org.apache.httpcomponents.httpclient"/>
             <requirement
-                name="org.apache.httpcomponents.httpcore.source"/>
+                name="org.apache.httpcomponents.httpcore"/>
             <requirement
                 name="org.eclipse.ecf.provider.jaxrs.feature.feature.group"/>
             <requirement
