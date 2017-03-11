@@ -2172,8 +2172,6 @@
         <requirement
             name="org.eclipse.pde.junit.runtime"/>
         <requirement
-            name="org.eclipse.swt.dummyfragments.feature.group"/>
-        <requirement
             name="org.hamcrest.core"
             versionRange="[1.3.0,2.0.0)"/>
         <requirement
@@ -2221,8 +2219,6 @@
           <repository
               url="http://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
           <repository
-              url="http://agentlab.ru/p2/orbit/missing-swt-fragments/updates/nightly/"/>
-          <repository
               url="http://download.eclipse.org/eclipse/updates/4.6/"/>
         </repositoryList>
         <repositoryList
@@ -2240,9 +2236,18 @@
           <repository
               url="http://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
           <repository
-              url="http://agentlab.ru/p2/orbit/missing-swt-fragments/updates/nightly/"/>
-          <repository
               url="http://download.eclipse.org/eclipse/updates/4.7/"/>
+        </repositoryList>
+      </targlet>
+      <targlet
+          name="swt.missing.fragments"
+          activeRepositoryList="Neon">
+        <requirement
+            name="org.eclipse.swt.dummyfragments.feature.group"/>
+        <repositoryList
+            name="Neon">
+          <repository
+              url="http://agentlab.ru/p2/orbit/missing-swt-fragments/updates/nightly/"/>
         </repositoryList>
       </targlet>
     </setupTask>
@@ -2269,9 +2274,25 @@
           xsi:type="setup.targlets:TargletTask">
         <targlet
             name="${scope.project.label}"
-            activeRepositoryList="${eclipse.target.platform}">
+            activeRepositoryList="Neon">
           <requirement
-              name="org.eclipse.e4.rcp.feature.group"/>
+              name="org.eclipse.e4.rcp.feature.group"
+              versionRange="[1.5.0,1.6.0)"/>
+          <repositoryList
+              name="Neon">
+            <repository
+                url="http://download.eclipse.org/releases/neon"/>
+          </repositoryList>
+        </targlet>
+        <description></description>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.targlets:TargletTask"
+          id="wer"
+          disabled="true">
+        <targlet
+            name="qweqwe"
+            activeRepositoryList="">
           <requirement
               name="org.eclipse.e4.tools.bundle.spy.feature.feature.group"/>
           <requirement
@@ -2299,6 +2320,19 @@
                 url="http://download.eclipse.org/releases/oxygen"/>
           </repositoryList>
         </targlet>
+        <targlet
+            name="${scope.project.label}"
+            activeRepositoryList="Oxygen">
+          <requirement
+              name="org.eclipse.e4.rcp.feature.group"
+              versionRange="[1.6.0,1.7.0)"/>
+          <repositoryList
+              name="Oxygen">
+            <repository
+                url="http://download.eclipse.org/releases/oxygen"/>
+          </repositoryList>
+        </targlet>
+        <description></description>
       </setupTask>
       <project
           href="https://raw.githubusercontent.com/agentlab/gef5_examples/master/setups/setup-org.eclipse.gef.mvc.examples/org.eclipse.gef.mvc.examples.setup#/"/>
@@ -2337,6 +2371,8 @@
                   url="http://download.eclipse.org/efxclipse/runtime-nightly/site"/>
               <repository
                   url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+              <repository
+                  url="http://download.eclipse.org/efxclipse/updates-nightly/site"/>
             </repositoryList>
           </targlet>
         </setupTask>

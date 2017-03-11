@@ -52,19 +52,9 @@
         xsi:type="setup.p2:P2Task"
         label="client">
       <requirement
-          name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.recommenders.news.rcp.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-      <requirement
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/recommenders/updates/stable/"/>
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
@@ -100,10 +90,6 @@
         xsi:type="setup.p2:P2Task"
         label="m2e">
       <requirement
-          name="org.eclipse.m2e.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.m2e.logback.feature.feature.group"/>
-      <requirement
           name="com.ianbrandt.tools.m2e.mdp.feature.feature.group"/>
       <requirement
           name="org.sonatype.m2e.antlr.feature.feature.group"/>
@@ -138,33 +124,15 @@
       <requirement
           name="org.eclipse.egit.mylyn.feature.group"/>
       <requirement
-          name="org.eclipse.mylyn_feature.feature.group"/>
-      <requirement
           name="org.eclipse.mylyn.builds.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.context_feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
       <requirement
-          name="org.eclipse.mylyn.git.feature.group"/>
-      <requirement
           name="org.eclipse.mylyn.github.feature.feature.group"/>
       <requirement
-          name="org.eclipse.mylyn.hudson.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.ide_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.java_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.pde_feature.feature.group"/>
-      <requirement
           name="org.eclipse.mylyn.team_feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
       <requirement
           name="com.atlassian.connector.eclipse.feature.group"/>
       <repository
@@ -180,6 +148,12 @@
       <repository
           url="http://download.sigasi.com/updates/mousefeed/"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="PDE">
+      <requirement
+          name="org.eclipse.sdk.feature.group"/>
+    </setupTask>
     <version
         name="latest"
         label="Latest Release (Neon)"
@@ -188,14 +162,14 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon1a</value>
+          <value>https://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/neon2</value>
         </detail>
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Developer IDE  (Neon)">
+          label="Eclipse for RCP and RAP Developers (Neon)">
         <requirement
-            name="epp.package.java"
+            name="epp.package.rcp"
             versionRange="[4.6.0,4.7.0)"/>
         <requirement
             name="org.eclipse.platform.feature.group"
@@ -204,29 +178,167 @@
             name="org.eclipse.rcp.feature.group"
             versionRange="[4.6.0,4.7.0)"/>
         <requirement
-            name="org.eclipse.jdt.feature.group"/>
+            name="org.eclipse.jdt.feature.group"
+            versionRange="[3.12.0,3.13.0)"/>
         <requirement
-            name="org.eclipse.pde.feature.group"/>
+            name="org.eclipse.pde.feature.group"
+            versionRange="[3.12.0,3.13.0)"/>
         <requirement
-            name="org.eclipse.sdk.feature.group"/>
+            name="org.eclipse.buildship.feature.group"/>
+        <requirement
+            name="org.eclipse.e4.core.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.rap.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.ide.feature.group"/>
         <requirement
             name="org.eclipse.wst.xml_ui.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+            url="http://download.eclipse.org/releases/neon/201612211000"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="ajdt">
+          label="AJDT">
         <requirement
             name="org.eclipse.ajdt.feature.group"/>
         <requirement
             name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+    </version>
+    <version
+        name="oxygen"
+        label="Oxygen"
+        requiredJavaVersion="1.8">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+        <detail
+            key="siteURI">
+          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygenm4</value>
+        </detail>
+      </annotation>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Eclipse for RCP and RAP Developers (Oxygen)">
+        <requirement
+            name="epp.package.rcp"
+            versionRange="[4.7.0,4.8.0)"/>
+        <requirement
+            name="org.eclipse.platform.feature.group"
+            versionRange="[4.7.0,4.8.0)"/>
+        <requirement
+            name="org.eclipse.rcp.feature.group"
+            versionRange="[4.7.0,4.8.0)"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"
+            versionRange="[3.13.0,3.14.0)"/>
+        <requirement
+            name="org.eclipse.pde.feature.group"
+            versionRange="[3.13.0,3.14.0)"/>
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <requirement
+            name="org.eclipse.e4.core.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.rap.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.ide.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.xml_ui.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
+        <repository
+            url="http://download.eclipse.org/releases/oxygen"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
         <repository
             url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
       </setupTask>
@@ -367,12 +479,41 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="e4 Tools">
+      <requirement
+          name="org.eclipse.e4.core.tools.feature.source.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.tools.bundle.spy.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.tools.context.spy.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.tools.css.spy.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.tools.event.spy.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.tools.preference.spy.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.tools.model.spy.feature.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         disabled="true"
         label="mousefeed">
       <requirement
           name="com.mousefeed.feature.feature.group"/>
       <repository
           url="http://download.sigasi.com/updates/mousefeed/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        disabled="true"
+        label="XPath">
+      <requirement
+          name="eu.musoft.eclipse.xpath.evaluation.plugin.feature.group"/>
+      <repository
+          url="https://raw.githubusercontent.com/stoupa91/eclipse-xpath-evaluation-plugin/master/eclipse-xpath-evaluation-plugin-update-site/"/>
     </setupTask>
     <version
         name="latest"
@@ -382,14 +523,14 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon1a</value>
+          <value>https://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/neon2</value>
         </detail>
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Developer IDE  (Neon)">
+          label="Eclipse for RCP and RAP Developers (Neon)">
         <requirement
-            name="epp.package.java"
+            name="epp.package.rcp"
             versionRange="[4.6.0,4.7.0)"/>
         <requirement
             name="org.eclipse.platform.feature.group"
@@ -398,37 +539,61 @@
             name="org.eclipse.rcp.feature.group"
             versionRange="[4.6.0,4.7.0)"/>
         <requirement
-            name="org.eclipse.pde.feature.group"/>
+            name="org.eclipse.jdt.feature.group"
+            versionRange="[3.12.0,3.13.0)"/>
         <requirement
-            name="org.eclipse.sdk.feature.group"/>
+            name="org.eclipse.pde.feature.group"
+            versionRange="[3.12.0,3.13.0)"/>
         <requirement
-            name="org.eclipse.jdt.feature.group"/>
+            name="org.eclipse.buildship.feature.group"/>
         <requirement
-            name="org.eclipse.platform.feature.group"
-            versionRange="[4.6.0,4.7.0)"/>
+            name="org.eclipse.e4.core.tools.feature.feature.group"/>
         <requirement
-            name="org.eclipse.rcp.feature.group"
-            versionRange="[4.6.0,4.7.0)"/>
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.rap.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.ide.feature.group"/>
         <requirement
             name="org.eclipse.wst.xml_ui.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="ajdt">
-        <requirement
-            name="org.eclipse.ajdt.feature.group"/>
-        <requirement
-            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-        <repository
-            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+            url="http://download.eclipse.org/releases/neon/201612211000"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -438,34 +603,96 @@
         <repository
             url="http://download.eclipse.org/efxclipse/updates-released/2.4.0/site"/>
       </setupTask>
+    </version>
+    <version
+        name="oxygen"
+        label="Oxygen"
+        requiredJavaVersion="1.8">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+        <detail
+            key="siteURI">
+          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygenm4</value>
+        </detail>
+      </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="e4 Tools">
+          label="Eclipse for RCP and RAP Developers (Oxygen)">
         <requirement
-            name="org.eclipse.e4.core.tools.feature.source.feature.group"/>
+            name="epp.package.rcp"
+            versionRange="[4.7.0,4.8.0)"/>
         <requirement
-            name="org.eclipse.e4.tools.bundle.spy.feature.feature.group"/>
+            name="org.eclipse.platform.feature.group"
+            versionRange="[4.7.0,4.8.0)"/>
         <requirement
-            name="org.eclipse.e4.tools.context.spy.feature.feature.group"/>
+            name="org.eclipse.rcp.feature.group"
+            versionRange="[4.7.0,4.8.0)"/>
         <requirement
-            name="org.eclipse.e4.tools.css.spy.feature.feature.group"/>
+            name="org.eclipse.jdt.feature.group"
+            versionRange="[3.13.0,3.14.0)"/>
         <requirement
-            name="org.eclipse.e4.tools.event.spy.feature.feature.group"/>
+            name="org.eclipse.pde.feature.group"
+            versionRange="[3.13.0,3.14.0)"/>
         <requirement
-            name="org.eclipse.e4.tools.preference.spy.feature.feature.group"/>
+            name="org.eclipse.buildship.feature.group"/>
         <requirement
-            name="org.eclipse.e4.tools.model.spy.feature.feature.group"/>
+            name="org.eclipse.e4.core.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.feature.group"/>
+        <requirement
+            name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.m2e.logback.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.git.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.hudson.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.ide_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.java_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.pde_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.rap.tools.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.ide.feature.group"/>
+        <requirement
+            name="org.eclipse.wst.xml_ui.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest"/>
+            url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
+        <repository
+            url="http://download.eclipse.org/releases/oxygen"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          disabled="true"
-          label="XPath">
+          label="FX IDE">
         <requirement
-            name="eu.musoft.eclipse.xpath.evaluation.plugin.feature.group"/>
+            name="org.eclipse.fx.ide.feature.feature.group"/>
         <repository
-            url="https://raw.githubusercontent.com/stoupa91/eclipse-xpath-evaluation-plugin/master/eclipse-xpath-evaluation-plugin-update-site/"/>
+            url="http://download.eclipse.org/efxclipse/updates-nightly/site/"/>
       </setupTask>
     </version>
     <description>The JavaFX package provides tools and runtimes for building JavaFX applications....</description>
@@ -604,6 +831,24 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="PDE">
+      <requirement
+          name="org.eclipse.sdk.feature.group"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="AJDT">
+      <requirement
+          name="org.eclipse.ajdt.feature.group"/>
+      <requirement
+          name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+      <repository
+          url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         disabled="true"
         label="mousefeed">
       <requirement
@@ -641,7 +886,50 @@
             name="org.eclipse.pde.feature.group"
             versionRange="[3.12.0,3.13.0)"/>
         <requirement
-            name="org.eclipse.sdk.feature.group"/>
+            name="org.eclipse.emf.ecore.xcore.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.mwe2.language.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.xtext.sdk.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/technology/epp/packages/neon"/>
+        <repository
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+      </setupTask>
+    </version>
+    <version
+        name="oxygen"
+        label="Oxygen"
+        requiredJavaVersion="1.8">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+        <detail
+            key="siteURI">
+          <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-and-dsl-developers/oxygenm4</value>
+        </detail>
+      </annotation>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Eclipse DSL Tools (Oxygen)">
+        <requirement
+            name="epp.package.dsl"
+            versionRange="[4.7.0,4.8.0)"/>
+        <requirement
+            name="org.eclipse.platform.feature.group"
+            versionRange="[4.7.0,4.8.0)"/>
+        <requirement
+            name="org.eclipse.rcp.feature.group"
+            versionRange="[4.7.0,4.8.0)"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"
+            versionRange="[3.13.0,3.14.0)"/>
+        <requirement
+            name="org.eclipse.pde.feature.group"
+            versionRange="[3.13.0,3.14.0)"/>
         <requirement
             name="org.eclipse.emf.ecore.xcore.sdk.feature.group"/>
         <requirement
@@ -650,26 +938,10 @@
             name="org.eclipse.emf.sdk.feature.group"/>
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"/>
-        <requirement
-            name="org.eclipse.wst.xml_ui.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/neon"/>
+            url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="http://download.eclipse.org/releases/neon"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="ajdt">
-        <requirement
-            name="org.eclipse.ajdt.feature.group"/>
-        <requirement
-            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-        <repository
-            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+            url="http://download.eclipse.org/releases/oxygen"/>
       </setupTask>
     </version>
     <description>The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client, XML Editor, and Maven integration.</description>
