@@ -2207,7 +2207,7 @@
         <repositoryList
             name="Neon">
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository"/>
+              url="http://download.eclipse.org/tools/orbit/R-builds/R20170307180635/repository"/>
           <repository
               url="http://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
           <repository
