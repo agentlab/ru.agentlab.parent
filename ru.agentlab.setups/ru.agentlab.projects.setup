@@ -2237,13 +2237,17 @@
               url="http://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
           <repository
               url="http://download.eclipse.org/eclipse/updates/4.7/"/>
+          <repository
+              url="http://download.eclipse.org/eclipse/updates/4.7milestones"/>
         </repositoryList>
       </targlet>
       <targlet
           name="swt.missing.fragments"
-          activeRepositoryList="Neon">
+          activeRepositoryList="${eclipse.target.platform}"
+          includeAllPlatforms="true">
         <requirement
-            name="org.eclipse.swt.dummyfragments.feature.group"/>
+            name="org.eclipse.swt.dummyfragments.feature.group"
+            optional="true"/>
         <repositoryList
             name="Neon">
           <repository
@@ -2253,7 +2257,7 @@
     </setupTask>
     <project
         href="https://raw.githubusercontent.com/agentlab/ambry/mvn/setups/com.github.ambry.setup#/"/>
-	<project
+    <project
         href="https://raw.githubusercontent.com/agentlab/ru.agentlab.maia/develop/setups/ru.agentlab.maia.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/extjwnl/master/setups/net.sf.extjwnl.setup#/"/>
@@ -2269,7 +2273,7 @@
         href="https://raw.githubusercontent.com/agentlab/org.slf4j.osgi/master/setups/org.slf4j.osgi.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/net.sf.tweety/develop/setups/net.sf.tweety.setup#/"/>
-	<project
+    <project
         href="https://raw.githubusercontent.com/agentlab/org.eclipse.oomph.console/master/setups/OomphConsole.setup#/"/>
     <project
         name="e4"
