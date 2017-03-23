@@ -309,12 +309,6 @@
         <requirement
             name="org.eclipse.rap.tools.feature.feature.group"/>
         <requirement
-            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-        <requirement
             name="org.eclipse.swtbot.eclipse.feature.group"/>
         <requirement
             name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
@@ -343,6 +337,33 @@
             url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
         <repository
             url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="recomm">
+        <requirement
+            name="org.eclipse.aether.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.connector.basic.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.file.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.http.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.maven.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.3rd.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.testing.rcp.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/recommenders/updates/head/"/>
       </setupTask>
     </version>
     <description>The Java package provides tools and runtimes for building java applications....</description>
@@ -668,12 +689,6 @@
         <requirement
             name="org.eclipse.rap.tools.feature.feature.group"/>
         <requirement
-            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-        <requirement
             name="org.eclipse.swtbot.eclipse.feature.group"/>
         <requirement
             name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
@@ -697,6 +712,33 @@
             name="org.eclipse.fx.ide.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/efxclipse/updates-nightly/site/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="recomm">
+        <requirement
+            name="org.eclipse.aether.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.connector.basic.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.file.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.http.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.maven.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.3rd.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.testing.rcp.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/recommenders/updates/head/"/>
       </setupTask>
     </version>
     <description>The JavaFX package provides tools and runtimes for building JavaFX applications....</description>
@@ -1211,10 +1253,6 @@
         <requirement
             name="org.eclipse.pde.feature.group"/>
         <requirement
-            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
             name="org.eclipse.rse.feature.group"/>
         <requirement
             name="org.eclipse.rse.useractions.feature.group"/>
@@ -1240,6 +1278,33 @@
             url="http://download.eclipse.org/releases/oxygen/201611041000"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="recomm">
+        <requirement
+            name="org.eclipse.aether.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.connector.basic.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.file.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.http.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.maven.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.3rd.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.testing.rcp.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/recommenders/updates/head/"/>
       </setupTask>
     </version>
     <version
@@ -1509,10 +1574,6 @@
         <requirement
             name="org.eclipse.pde.feature.group"/>
         <requirement
-            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
             name="org.eclipse.rse.feature.group"/>
         <requirement
             name="org.eclipse.rse.useractions.feature.group"/>
@@ -1538,6 +1599,33 @@
             url="http://download.eclipse.org/releases/oxygen/201611041000"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="recomm">
+        <requirement
+            name="org.eclipse.aether.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.connector.basic.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.file.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.transport.http.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.aether.maven.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.3rd.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.testing.rcp.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/recommenders/updates/head/"/>
       </setupTask>
     </version>
     <version
