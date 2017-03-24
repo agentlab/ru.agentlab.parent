@@ -2257,6 +2257,8 @@
     </setupTask>
     <project
         href="https://raw.githubusercontent.com/agentlab/ambry/mvn/setups/com.github.ambry.setup#/"/>
+	<project
+        href="https://raw.githubusercontent.com/agentlab/CoffeeNow/master/setups/ru.agentlab.coffeenow.setup#/"/>
     <project
         href="https://raw.githubusercontent.com/agentlab/ru.agentlab.maia/develop/setups/ru.agentlab.maia.setup#/"/>
     <project
