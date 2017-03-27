@@ -232,7 +232,9 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201612211000"/>
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -616,7 +618,9 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/neon"/>
         <repository
-            url="http://download.eclipse.org/releases/neon/201612211000"/>
+            url="http://download.eclipse.org/releases/neon"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.6/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
