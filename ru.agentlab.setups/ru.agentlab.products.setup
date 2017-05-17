@@ -283,9 +283,15 @@
         <requirement
             name="org.eclipse.e4.core.tools.feature.feature.group"/>
         <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
+        <requirement
             name="org.eclipse.egit.feature.group"/>
         <requirement
             name="org.eclipse.egit.mylyn.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jgit.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
         <requirement
@@ -325,11 +331,14 @@
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7"/>
+        <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
+        <repository
+            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          disabled="true"
           label="AJDT">
         <requirement
             name="org.eclipse.ajdt.feature.group"/>
@@ -342,7 +351,6 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          disabled="true"
           label="recomm">
         <requirement
             name="org.eclipse.aether.feature.feature.group"/>
@@ -365,7 +373,7 @@
         <requirement
             name="org.eclipse.recommenders.testing.rcp.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/recommenders/updates/head/"/>
+            url="http://download.eclipse.org/recommenders/updates/stable/"/>
       </setupTask>
     </version>
     <description>The Java package provides tools and runtimes for building java applications....</description>
