@@ -156,7 +156,7 @@
     </setupTask>
     <version
         name="latest"
-        label="Latest Release (Neon)"
+        label="Latest (Neon)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -251,7 +251,7 @@
     </version>
     <version
         name="oxygen"
-        label="Oxygen"
+        label="Oxygen (unstable)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -326,6 +326,8 @@
             name="org.eclipse.wst.xml_ui.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
+        <repository
+            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
         <repository
             url="http://download.eclipse.org/releases/oxygen"/>
         <repository
@@ -550,7 +552,7 @@
     </setupTask>
     <version
         name="latest"
-        label="Latest Release (Neon)"
+        label="Latest (Neon)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -641,7 +643,7 @@
     </version>
     <version
         name="oxygen"
-        label="Oxygen"
+        label="Oxygen (unstable)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -711,11 +713,17 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
+            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
+        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7"/>
+        <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
+        <repository
+            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -961,7 +969,7 @@
     </version>
     <version
         name="oxygen"
-        label="Oxygen"
+        label="Oxygen (unstable)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -999,9 +1007,17 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
+            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
+        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
         <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7"/>
+        <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
+        <repository
+            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
     </version>
     <description>The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client, XML Editor, and Maven integration.</description>
@@ -1149,7 +1165,7 @@
     </setupTask>
     <version
         name="latest"
-        label="Latest (Oxygen)"
+        label="Latest Unstable (Oxygen)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -1285,11 +1301,19 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/oxygen/M3"/>
+            url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="http://download.eclipse.org/releases/oxygen/201611041000"/>
+            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
+        <repository
+            url="http://download.eclipse.org/releases/oxygen"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
+        <repository
+            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1606,11 +1630,19 @@
         <requirement
             name="org.eclipse.wst.xsl.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/oxygen/M3"/>
+            url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="http://download.eclipse.org/releases/oxygen/201611041000"/>
+            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
+        <repository
+            url="http://download.eclipse.org/releases/oxygen"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
+        <repository
+            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1946,7 +1978,7 @@
     </annotation>
     <version
         name="latest"
-        label="Latest Release (Neon)"
+        label="Latest (Neon)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -2175,7 +2207,7 @@
     </setupTask>
     <version
         name="latest"
-        label="Latest Release (Neon)"
+        label="Latest (Neon)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -2367,7 +2399,7 @@
     </annotation>
     <version
         name="latest"
-        label="Latest Release (Neon)"
+        label="Latest (Neon)"
         requiredJavaVersion="1.8">
       <annotation
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
