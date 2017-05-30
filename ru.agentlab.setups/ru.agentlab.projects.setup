@@ -925,14 +925,19 @@
           xsi:type="setup.targlets:TargletTask">
         <targlet
             name="${scope.project.label}"
-            activeRepositoryList="Neon">
+            activeRepositoryList="${eclipse.target.platform}"
+            includeAllPlatforms="true">
           <requirement
-              name="org.eclipse.e4.rcp.feature.group"
-              versionRange="[1.5.0,1.6.0)"/>
+              name="org.eclipse.e4.rcp.feature.group"/>
           <repositoryList
               name="Neon">
             <repository
                 url="http://download.eclipse.org/releases/neon"/>
+          </repositoryList>
+          <repositoryList
+              name="Oxygen">
+            <repository
+                url="http://download.eclipse.org/releases/oxygen"/>
           </repositoryList>
         </targlet>
         <description></description>
