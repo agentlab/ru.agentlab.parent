@@ -1010,10 +1010,6 @@
                 name="org.eclipse.fx.runtime.feature.feature.group"/>
             <requirement
                 name="org.eclipse.fx.target.rcp4.feature.feature.group"/>
-            <requirement
-                name="org.eclipse.fx.target.feature.feature.group"/>
-            <requirement
-                name="org.eclipse.fx.slf4j.target.feature.feature.group"/>
             <repositoryList
                 name="Neon">
               <repository
