@@ -187,7 +187,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse for RCP and RAP Developers (Neon)">
+          label="Eclipse for RCP Developers (Neon)">
         <requirement
             name="epp.package.rcp"
             versionRange="[4.6.0,4.7.0)"/>
@@ -233,8 +233,6 @@
             name="org.eclipse.mylyn.pde_feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-        <requirement
-            name="org.eclipse.rap.tools.feature.feature.group"/>
         <requirement
             name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
         <requirement
@@ -282,7 +280,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse for RCP and RAP Developers (Oxygen)">
+          label="Eclipse for RCP Developers (Oxygen)">
         <requirement
             name="epp.package.rcp"
             versionRange="[4.7.0,4.8.0)"/>
@@ -334,8 +332,6 @@
             name="org.eclipse.mylyn.pde_feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-        <requirement
-            name="org.eclipse.rap.tools.feature.feature.group"/>
         <requirement
             name="org.eclipse.swtbot.eclipse.feature.group"/>
         <requirement
@@ -603,7 +599,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse for RCP and RAP Developers (Neon)">
+          label="Eclipse for RCP Developers (Neon)">
         <requirement
             name="epp.package.rcp"
             versionRange="[4.6.0,4.7.0)"/>
@@ -649,8 +645,6 @@
             name="org.eclipse.mylyn.pde_feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-        <requirement
-            name="org.eclipse.rap.tools.feature.feature.group"/>
         <requirement
             name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
         <requirement
@@ -694,7 +688,7 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Eclipse for RCP and RAP Developers (Oxygen)">
+          label="Eclipse for RCP Developers (Oxygen)">
         <requirement
             name="epp.package.rcp"
             versionRange="[4.7.0,4.8.0)"/>
@@ -740,8 +734,6 @@
             name="org.eclipse.mylyn.pde_feature.feature.group"/>
         <requirement
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
-        <requirement
-            name="org.eclipse.rap.tools.feature.feature.group"/>
         <requirement
             name="org.eclipse.swtbot.eclipse.feature.group"/>
         <requirement
