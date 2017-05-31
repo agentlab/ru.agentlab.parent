@@ -50,6 +50,26 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="decompiler">
+      <requirement
+          name="org.sf.feeling.decompiler.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.cfr.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jad.feature.group"
+          optional="true"
+          filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jd.feature.group"
+          optional="true"
+          filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))"/>
+      <requirement
+          name="org.sf.feeling.decompiler.procyon.feature.group"/>
+      <repository
+          url="http://www.cpupk.com/decompiler/update"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         label="client">
       <requirement
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
@@ -389,6 +409,26 @@
         <value>http://www.eclipse.org/downloads/images/java.png</value>
       </detail>
     </annotation>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="decompiler">
+      <requirement
+          name="org.sf.feeling.decompiler.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.cfr.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jad.feature.group"
+          optional="true"
+          filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jd.feature.group"
+          optional="true"
+          filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))"/>
+      <requirement
+          name="org.sf.feeling.decompiler.procyon.feature.group"/>
+      <repository
+          url="http://www.cpupk.com/decompiler/update"/>
+    </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="client">
