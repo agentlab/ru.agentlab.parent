@@ -444,16 +444,34 @@
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.ide.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.tools.ide.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.tools.ide.pde.feature.group"/>
       <repository
           url="http://download.eclipse.org/recommenders/updates/stable/"/>
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
           url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+      <repository
+          url="http://update.stan4j.com/ide"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="loskutov-utils">
+      <requirement
+          name="JDepend4Eclipse.feature.group"/>
+      <requirement
+          name="DataHierarchy.feature.group"/>
+      <requirement
+          name="FileSync.feature.group"/>
+      <requirement
+          name="com.cr.lockness.Lockness.feature.feature.group"/>
+      <requirement
+          name="de.loskutov.BytecodeOutline.feature.feature.group"/>
       <requirement
           name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
       <requirement
