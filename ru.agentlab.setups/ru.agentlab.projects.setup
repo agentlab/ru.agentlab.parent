@@ -777,19 +777,15 @@
           activeRepositoryList="${eclipse.target.platform}"
           includeAllPlatforms="true">
         <requirement
-            name="ch.qos.logback.slf4j"
-            versionRange="[1.0.7,1.1.0)"/>
+            name="ch.qos.logback.slf4j"/>
         <requirement
-            name="ch.qos.logback.classic"
-            versionRange="[1.0.7,1.1.0)"/>
+            name="ch.qos.logback.classic"/>
         <requirement
-            name="ch.qos.logback.core"
-            versionRange="[1.0.7,1.1.0)"/>
+            name="ch.qos.logback.core"/>
         <requirement
             name="com.codeaffine.osgi.test.util.feature.feature.group"/>
         <requirement
-            name="com.google.guava.feature.feature.group"
-            versionRange="[18.0.0,18.1.0)"/>
+            name="com.google.guava"/>
         <requirement
             name="com.google.inject.assistedinject"
             versionRange="[3.0.0,3.1.0)"/>
@@ -831,28 +827,21 @@
             name="org.mockito.feature.feature.group"
             versionRange="[1.9.5,2.0.0)"/>
         <requirement
-            name="org.slf4j.api"
-            versionRange="[1.7.2,1.8.0)"/>
+            name="org.slf4j.api"/>
         <requirement
-            name="org.slf4j.jcl"
-            versionRange="[1.7.2,1.8.0)"/>
+            name="org.slf4j.apis.jcl"/>
         <requirement
-            name="org.slf4j.ext"
-            versionRange="[1.7.2,1.8.0)"/>
+            name="org.slf4j.apis.log4j"/>
         <requirement
-            name="org.slf4j.jul"
-            versionRange="[1.7.2,1.8.0)"/>
+            name="org.slf4j.bridge.jul"/>
         <requirement
-            name="org.slf4j.log4j"
-            versionRange="[1.7.2,1.8.0)"/>
+            name="org.slf4j.ext"/>
         <repositoryList
             name="Neon">
           <repository
               url="http://download.eclipse.org/tools/orbit/R-builds/R20170307180635/repository"/>
           <repository
               url="http://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
-          <repository
-              url="http://agentlab.ru/eclipse/update/com.google.guava/18.0.0.201502021635"/>
           <repository
               url="http://fappel.github.io/xiliary"/>
           <repository
@@ -865,11 +854,9 @@
         <repositoryList
             name="Oxygen">
           <repository
-              url="http://download.eclipse.org/tools/orbit/S-builds/S20170120205402/repository"/>
+              url="http://download.eclipse.org/tools/orbit/R-builds/R20170516192513/repository"/>
           <repository
               url="http://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
-          <repository
-              url="http://agentlab.ru/eclipse/update/com.google.guava/18.0.0.201502021635"/>
           <repository
               url="http://fappel.github.io/xiliary"/>
           <repository
@@ -972,18 +959,6 @@
               name="Oxygen">
             <repository
                 url="http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest"/>
-            <repository
-                url="http://download.eclipse.org/releases/oxygen"/>
-          </repositoryList>
-        </targlet>
-        <targlet
-            name="${scope.project.label}"
-            activeRepositoryList="Oxygen">
-          <requirement
-              name="org.eclipse.e4.rcp.feature.group"
-              versionRange="[1.6.0,1.7.0)"/>
-          <repositoryList
-              name="Oxygen">
             <repository
                 url="http://download.eclipse.org/releases/oxygen"/>
           </repositoryList>
