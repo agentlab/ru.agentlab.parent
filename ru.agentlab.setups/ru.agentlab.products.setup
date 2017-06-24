@@ -1111,6 +1111,26 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="decompiler">
+      <requirement
+          name="org.sf.feeling.decompiler.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.cfr.feature.group"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jad.feature.group"
+          optional="true"
+          filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))"/>
+      <requirement
+          name="org.sf.feeling.decompiler.jd.feature.group"
+          optional="true"
+          filter="(&amp;(|(osgi.arch=x86)(osgi.arch=x86_64))(|(osgi.os=linux)(osgi.os=macosx)(osgi.os=win32)))"/>
+      <requirement
+          name="org.sf.feeling.decompiler.procyon.feature.group"/>
+      <repository
+          url="http://www.cpupk.com/decompiler/update"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         label="client">
       <requirement
           name="org.eclipse.recommenders.rcp.feature.feature.group"/>
@@ -1211,12 +1231,8 @@
         label="AJDT">
       <requirement
           name="org.eclipse.ajdt.feature.group"/>
-      <requirement
-          name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-      <repository
-          url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -1227,6 +1243,14 @@
           name="org.sonarlint.eclipse.jdt.feature.feature.group"/>
       <repository
           url="http://eclipse.sonarlint.org"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Bndtools">
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <repository
+          url="https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2/"/>
     </setupTask>
     <version
         name="oxygen"
