@@ -1216,8 +1216,12 @@
           name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
       <requirement
           name="com.atlassian.connector.eclipse.feature.group"/>
+      <requirement
+          name="de.weingardt.mylyn.gitlab.feature.group"/>
       <repository
           url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
+      <repository
+          url="http://pweingardt.github.com/mylyn-gitlab"/>
       <description></description>
     </setupTask>
     <setupTask
@@ -1251,6 +1255,50 @@
           name="bndtools.main.feature.feature.group"/>
       <repository
           url="https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Themes">
+      <requirement
+          name="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group"/>
+      <requirement
+          name="com.genuitec.eclipse.theming.feature.feature.group"/>
+      <requirement
+          name="com.genuitec.eclipse.theming.designer.feature.feature.group"/>
+      <repository
+          url="http://fappel.github.io/xiliary/"/>
+      <repository
+          url="http://www.genuitec.com/updates/webclipse/ci/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Terminal">
+      <requirement
+          name="org.eclipse.tm.terminal.view.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.control.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.local.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.serial.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.ssh.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.telnet.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.view.rse.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.useractions.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.scp.feature.group"/>
+      <repository
+          url="http://dist.springsource.com/release/TOOLS/update/e3.7/"/>
     </setupTask>
     <version
         name="oxygen"
