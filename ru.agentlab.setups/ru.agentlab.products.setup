@@ -1294,11 +1294,15 @@
       <requirement
           name="org.eclipse.rse.feature.group"/>
       <requirement
+          name="org.eclipse.rse.sdk.feature.group"/>
+      <requirement
           name="org.eclipse.rse.useractions.feature.group"/>
       <requirement
           name="org.eclipse.rse.scp.feature.group"/>
       <repository
           url="http://download.eclipse.org/tm/terminal/marketplace"/>
+      <repository
+          url="http://download.eclipse.org/tm/updates/4.0"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
