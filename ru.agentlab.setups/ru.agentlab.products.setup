@@ -1298,7 +1298,23 @@
       <requirement
           name="org.eclipse.rse.scp.feature.group"/>
       <repository
-          url="http://dist.springsource.com/release/TOOLS/update/e3.7/"/>
+          url="http://download.eclipse.org/tm/terminal/marketplace"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="EclEmma">
+      <requirement
+          name="com.mountainminds.eclemma.feature.feature.group"/>
+      <repository
+          url="http://update.eclemma.org"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Docker">
+      <requirement
+          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/linuxtools/update-docker-neon3respinb"/>
     </setupTask>
     <version
         name="oxygen"
