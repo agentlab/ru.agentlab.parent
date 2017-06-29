@@ -1243,8 +1243,6 @@
         label="SonarLint">
       <requirement
           name="org.sonarlint.eclipse.feature.feature.group"/>
-      <requirement
-          name="org.sonarlint.eclipse.jdt.feature.feature.group"/>
       <repository
           url="http://eclipse.sonarlint.org"/>
     </setupTask>
@@ -1253,8 +1251,12 @@
         label="Bndtools">
       <requirement
           name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="org.nodeclipse.enide.editors.gradle.feature.feature.group"/>
       <repository
           url="https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2/"/>
+      <repository
+          url="http://www.nodeclipse.org/updates/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -1308,7 +1310,7 @@
         xsi:type="setup.p2:P2Task"
         label="EclEmma">
       <requirement
-          name="com.mountainminds.eclemma.feature.feature.group"/>
+          name="org.eclipse.eclemma.feature.feature.group"/>
       <repository
           url="http://update.eclemma.org"/>
     </setupTask>
