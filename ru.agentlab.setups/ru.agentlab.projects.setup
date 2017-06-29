@@ -1322,5 +1322,7 @@
   <project href="https://raw.githubusercontent.com/agentlab/PowerLoomDSL/master/setups/ru.agentlab.powerloom.dsl.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/Gef4Web/master/setups/gef4web.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/webtreeview/master/setups/webtreeview.setup#/"/>
+  <project href="https://github.com/agentlab/ru.agentlab.parent/raw/master/ru.agentlab.setups/ru.agentlab.maia-sdk.setup#/"/>
+  
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>
