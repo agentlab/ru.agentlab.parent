@@ -1263,14 +1263,8 @@
         label="Themes">
       <requirement
           name="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group"/>
-      <requirement
-          name="com.genuitec.eclipse.theming.feature.feature.group"/>
-      <requirement
-          name="com.genuitec.eclipse.theming.designer.feature.feature.group"/>
       <repository
           url="http://fappel.github.io/xiliary/"/>
-      <repository
-          url="http://www.genuitec.com/updates/webclipse/ci/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
