@@ -527,84 +527,24 @@
         xsi:type="setup:VariableTask"
         type="PASSWORD"
         name="agentlab.user.password"
-        label="Agentlab password for issues">
-      <annotation
-          source="http://www.eclipse.org/oomph/setup/PasswordVerificationDisabled">
-        <detail
-            key="type">
-          <value>form</value>
-        </detail>
-        <detail
-            key="form.url">
-          <value>https://github.com/session</value>
-        </detail>
-        <detail
-            key="form.cookie">
-          <value>PHPSESSID</value>
-        </detail>
-        <detail
-            key="form.parameters">
-          <value>login password authenticity_token utf8 commit</value>
-        </detail>
-        <detail
-            key="form.secure.parameters">
-          <value>password</value>
-        </detail>
-        <detail
-            key="form.filter">
-          <value>login=anonymous\&amp;.*</value>
-        </detail>
-        <detail
-            key="form.parameter.login">
-          <value>$${github.user.id}</value>
-        </detail>
-        <detail
-            key="form.parameter.password">
-          <value>$${value}</value>
-        </detail>
-        <detail
-            key="form.parameter.utf8">
-          <value>✓</value>
-        </detail>
-        <detail
-            key="form.parameter.commit">
-          <value>Sign in</value>
-        </detail>
-        <detail
-            key="form.ok">
-          <value>Valid password for $${form.parameter.login} at $${form.url}.</value>
-        </detail>
-        <detail
-            key="form.info">
-          <value>Validate the password for $${form.parameter.login} at $${form.url}.</value>
-        </detail>
-        <detail
-            key="form.warning">
-          <value>Unable to validate the password for $${form.parameter.login} because $${form.url} is unreachable.</value>
-        </detail>
-        <detail
-            key="form.error">
-          <value>Invalid password for $${form.parameter.login} at $${form.url}.</value>
-        </detail>
-      </annotation>
-    </setupTask>
+        label="Agentlab password for issues"/>
     <setupTask
         xsi:type="setup:VariableTask"
         name="agentlab.remoteURIs"
-        defaultValue="https://${agentlab.user.id|username}@agentlab.ru:9090/@{remoteURI}.git"
+        defaultValue="http://${agentlab.user.id|username}@agentlab.ru:9090/@{remoteURI}.git"
         label="Agentlab GitLab repository">
       <choice
           value="git@agentlab.ru:9090:@{remoteURI}.git"
           label="Git (read-write)"/>
       <choice
-          value="https://${agentlab.user.id|username}@agentlab.ru:9090/@{remoteURI}.git"
-          label="HTTPS (read-write)">
+          value="http://${agentlab.user.id|username}@agentlab.ru:9090/@{remoteURI}.git"
+          label="HTTP (read-write)">
         <annotation
             source="http://www.eclipse.org/oomph/setup/MatchChoice"/>
       </choice>
       <choice
-          value="https://agentlab.ru:9090/@{remoteURI}.git"
-          label="HTTPS (read-only, anonymous)"/>
+          value="http://agentlab.ru:9090/@{remoteURI}.git"
+          label="HTTP (read-only, anonymous)"/>
       <description>Choose from the available AgentLab Gitlab URIs</description>
     </setupTask>
   </setupTask>
@@ -636,7 +576,7 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="ru.agentlab.maia-sdk.git.clone"
-      remoteURI="maia/maia-sdk.git"
+      remoteURI="maia/maia-sdk"
       pushURI="">
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
@@ -664,25 +604,25 @@
       <requirement
           name="*"/>
       <sourceLocator
-          rootFolder="${ru.agentlab.maia.git.clone.location}/features"
+          rootFolder="${ru.agentlab.maia-sdk.git.clone.location}/features"
           locateNestedProjects="true"/>
       <sourceLocator
-          rootFolder="${ru.agentlab.maia.git.clone.location}/plugins"
+          rootFolder="${ru.agentlab.maia-sdk.git.clone.location}/plugins"
           locateNestedProjects="true"/>
       <sourceLocator
-          rootFolder="${ru.agentlab.maia.git.clone.location}/releng"
+          rootFolder="${ru.agentlab.maia-sdk.git.clone.location}/releng"
           locateNestedProjects="true"/>
       <sourceLocator
-          rootFolder="${ru.agentlab.maia.git.clone.location}/setups"
+          rootFolder="${ru.agentlab.maia-sdk.git.clone.location}/setups"
           locateNestedProjects="true"/>
     </targlet>
   </setupTask>
   <setupTask
       xsi:type="mylyn:MylynQueriesTask"
-      connectorKind="github"
-      repositoryURL="https://github.com/agentlab/ru.agentlab.maia"
-      userID="${github.user.id}"
-      password="${github.user.password}">
+      connectorKind="gitlab"
+      repositoryURL="http://agentlab.ru:9090/maia/maia-sdk"
+      userID="${agentlab.user.id}"
+      password="${agentlab.user.password}">
     <query summary="${scope.project.label} All Open Tasks">
       <attribute
           key="state"
@@ -694,7 +634,7 @@
           value="open::"/>
       <attribute
           key="assignee"
-          value="${github.user.id}"/>
+          value="${agentlab.user.id}"/>
     </query>
     <query summary="${scope.project.label} My Closed Tasks"
         url="">
@@ -703,7 +643,7 @@
           value="closed::"/>
       <attribute
           key="assignee"
-          value="${github.user.id}"/>
+          value="${agentlab.user.id}"/>
     </query>
   </setupTask>
   <setupTask
@@ -725,7 +665,7 @@
   <stream name="develop"
       label=""/>
   <logicalProjectContainer
-      xsi:type="setup:Project"
+      xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='ru.agentlab']"/>
   <description>IDE Setup for MAIA Project</description>
 </setup:Project>
