@@ -202,6 +202,14 @@
       <requirement
           name="org.eclipse.sdk.feature.group"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Themes">
+      <requirement
+          name="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group"/>
+      <repository
+          url="http://fappel.github.io/xiliary/"/>
+    </setupTask>
     <version
         name="latest"
         label="Latest (Neon)"
@@ -632,6 +640,14 @@
       <repository
           url="https://raw.githubusercontent.com/stoupa91/eclipse-xpath-evaluation-plugin/master/eclipse-xpath-evaluation-plugin-update-site/"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Themes">
+      <requirement
+          name="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group"/>
+      <repository
+          url="http://fappel.github.io/xiliary/"/>
+    </setupTask>
     <version
         name="latest"
         label="Latest (Neon)"
@@ -999,6 +1015,14 @@
           name="com.mousefeed.feature.feature.group"/>
       <repository
           url="http://download.sigasi.com/updates/mousefeed/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Themes">
+      <requirement
+          name="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group"/>
+      <repository
+          url="http://fappel.github.io/xiliary/"/>
     </setupTask>
     <version
         name="latest.released"
