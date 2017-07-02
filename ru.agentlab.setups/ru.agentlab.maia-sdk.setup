@@ -531,19 +531,19 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="agentlab.remoteURIs"
-        defaultValue="http://${agentlab.user.id|username}@agentlab.ru:9090/@{remoteURI}.git"
+        defaultValue="http://${agentlab.user.id|username}@agentlab.ru/gitlab/@{remoteURI}.git"
         label="Agentlab GitLab repository">
       <choice
-          value="git@agentlab.ru:9090:@{remoteURI}.git"
+          value="git@agentlab.ru/gitlab:@{remoteURI}.git"
           label="Git (read-write)"/>
       <choice
-          value="http://${agentlab.user.id|username}@agentlab.ru:9090/@{remoteURI}.git"
+          value="http://${agentlab.user.id|username}@agentlab.ru/gitlab/@{remoteURI}.git"
           label="HTTP (read-write)">
         <annotation
             source="http://www.eclipse.org/oomph/setup/MatchChoice"/>
       </choice>
       <choice
-          value="http://agentlab.ru:9090/@{remoteURI}.git"
+          value="http://agentlab.ru/gitlab/@{remoteURI}.git"
           label="HTTP (read-only, anonymous)"/>
       <description>Choose from the available AgentLab Gitlab URIs</description>
     </setupTask>
@@ -620,7 +620,7 @@
   <setupTask
       xsi:type="mylyn:MylynQueriesTask"
       connectorKind="gitlab"
-      repositoryURL="http://agentlab.ru:9090/maia/maia-sdk"
+      repositoryURL="http://agentlab.ru/gitlab/maia/maia-sdk"
       userID="${agentlab.user.id}"
       password="${agentlab.user.password}">
     <query summary="${scope.project.label} All Open Tasks">
