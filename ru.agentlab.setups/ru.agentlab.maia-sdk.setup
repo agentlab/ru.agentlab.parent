@@ -543,7 +543,7 @@
             source="http://www.eclipse.org/oomph/setup/MatchChoice"/>
       </choice>
       <choice
-          value="http://agentlab.ru/gitlab/@{remoteURI}.git"
+          value="https://agentlab.ru/gitlab/@{remoteURI}.git"
           label="HTTP (read-only, anonymous)"/>
       <description>Choose from the available AgentLab Gitlab URIs</description>
     </setupTask>
@@ -620,7 +620,7 @@
   <setupTask
       xsi:type="mylyn:MylynQueriesTask"
       connectorKind="gitlab"
-      repositoryURL="http://agentlab.ru/gitlab/maia/maia-sdk"
+      repositoryURL="https://agentlab.ru/gitlab/maia/maia-sdk"
       userID="${agentlab.user.id}"
       password="${agentlab.user.password}">
     <query summary="${scope.project.label} All Open Tasks">

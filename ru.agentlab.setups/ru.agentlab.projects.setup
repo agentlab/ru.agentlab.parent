@@ -841,13 +841,13 @@
           <repository
               url="http://download.eclipse.org/tools/orbit/R-builds/R20170307180635/repository"/>
           <repository
-              url="http://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
+              url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
           <repository
               url="http://fappel.github.io/xiliary"/>
           <repository
-              url="http://agentlab.ru/eclipse/update/org.junit/4.12.0/"/>
+              url="https://agentlab.ru/eclipse/update/org.junit/4.12.0/"/>
           <repository
-              url="http://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
+              url="https://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
           <repository
               url="http://download.eclipse.org/eclipse/updates/4.6/"/>
         </repositoryList>
@@ -856,13 +856,13 @@
           <repository
               url="http://download.eclipse.org/tools/orbit/R-builds/R20170516192513/repository"/>
           <repository
-              url="http://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
+              url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
           <repository
               url="http://fappel.github.io/xiliary"/>
           <repository
-              url="http://agentlab.ru/eclipse/update/org.junit/4.12.0/"/>
+              url="https://agentlab.ru/eclipse/update/org.junit/4.12.0/"/>
           <repository
-              url="http://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
+              url="https://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
           <repository
               url="http://download.eclipse.org/eclipse/updates/4.7/"/>
           <repository
@@ -879,7 +879,7 @@
         <repositoryList
             name="Neon">
           <repository
-              url="http://agentlab.ru/p2/orbit/missing-swt-fragments/updates/nightly/"/>
+              url="https://agentlab.ru/p2/orbit/missing-swt-fragments/updates/nightly/"/>
         </repositoryList>
       </targlet>
     </setupTask>
@@ -1163,7 +1163,7 @@
             <repository
                 url="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.10.v20160621"/>
             <repository
-                url="http://agentlab.ru/pd/p2/che/"/>
+                url="https://agentlab.ru/pd/p2/che/"/>
           </repositoryList>
           <repositoryList
               name="Oxygen">
@@ -1172,7 +1172,7 @@
             <repository
                 url="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.10.v20160621"/>
             <repository
-                url="http://agentlab.ru/pd/p2/che/"/>
+                url="https://agentlab.ru/pd/p2/che/"/>
           </repositoryList>
         </targlet>
       </setupTask>
@@ -1197,12 +1197,12 @@
             <repositoryList
                 name="Neon">
               <repository
-                  url="http://agentlab.ru/pd/p2/cloud-jaxrsproviders"/>
+                  url="https://agentlab.ru/pd/p2/cloud-jaxrsproviders"/>
             </repositoryList>
             <repositoryList
                 name="Oxygen">
               <repository
-                  url="http://agentlab.ru/pd/p2/cloud-jaxrsproviders"/>
+                  url="https://agentlab.ru/pd/p2/cloud-jaxrsproviders"/>
             </repositoryList>
           </targlet>
         </setupTask>
@@ -1278,9 +1278,9 @@
             <repository
                 url="http://download.eclipse.org/modeling/emft/texo/updates/interim"/>
             <repository
-                url="http://agentlab.ru/p2/orbit/de.metdocks.hi5.externals/"/>
+                url="https://agentlab.ru/p2/orbit/de.metdocks.hi5.externals/"/>
             <repository
-                url="http://agentlab.ru/p2/orbit/de.metdocks.hi5/"/>
+                url="https://agentlab.ru/p2/orbit/de.metdocks.hi5/"/>
             <repository
                 url="http://download.eclipse.org/releases/neon"/>
           </repositoryList>
