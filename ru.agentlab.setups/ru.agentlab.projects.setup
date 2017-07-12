@@ -796,6 +796,8 @@
             name="com.google.jsr305.feature.feature.group"
             versionRange="[1.0.0,1.1.0)"/>
         <requirement
+            name="javax.inject"/>
+        <requirement
             name="org.apache.commons.codec"
             versionRange="[1.4.0,2.0.0)"/>
         <requirement
@@ -1009,7 +1011,7 @@
             href="https://raw.githubusercontent.com/agentlab/WordNetEditor/master/setups/ru.agentlab.wordnet.editor.setup#/"/>
         <project
             href="https://raw.githubusercontent.com/agentlab/E4WordNetEditor/master/setups/setup-ru.agentlab.wordnet.e4editor/ru.agentlab.wordnet.e4editor.setup#/"/>
-		<project
+        <project
             href="https://raw.githubusercontent.com/agentlab/SemanticRelationsEditor/master/setups/ru.agentlab.semanticrelations.editor.setup#/"/>
         <stream
             name="master"/>
@@ -1325,6 +1327,5 @@
   <project href="https://raw.githubusercontent.com/agentlab/Gef4Web/master/setups/gef4web.setup#/"/>
   <project href="https://raw.githubusercontent.com/agentlab/webtreeview/master/setups/webtreeview.setup#/"/>
   <project href="https://github.com/agentlab/ru.agentlab.parent/raw/master/ru.agentlab.setups/ru.agentlab.maia-sdk.setup#/"/>
-  
   <description>All the projects at AgentLab that provide automated setup support along with additional user-added projects</description>
 </setup:ProjectCatalog>
