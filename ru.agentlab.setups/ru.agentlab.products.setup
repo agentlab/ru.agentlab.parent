@@ -94,7 +94,7 @@
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
-          url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+          url="https://agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
       <repository
           url="http://update.stan4j.com/ide"/>
     </setupTask>
@@ -223,6 +223,18 @@
       </annotation>
       <setupTask
           xsi:type="setup.p2:P2Task"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
           label="Eclipse for RCP Developers (Oxygen)">
         <requirement
             name="epp.package.rcp"
@@ -244,15 +256,9 @@
         <requirement
             name="org.eclipse.e4.core.tools.feature.feature.group"/>
         <requirement
-            name="org.eclipse.eclemma.feature.feature.group"/>
-        <requirement
             name="org.eclipse.egit.feature.group"/>
         <requirement
             name="org.eclipse.egit.mylyn.feature.group"/>
-        <requirement
-            name="org.eclipse.jdt.feature.group"/>
-        <requirement
-            name="org.eclipse.jgit.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
         <requirement
@@ -276,6 +282,12 @@
         <requirement
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
         <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
             name="org.eclipse.swtbot.eclipse.feature.group"/>
         <requirement
             name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
@@ -283,58 +295,18 @@
             name="org.eclipse.swtbot.ide.feature.group"/>
         <requirement
             name="org.eclipse.wst.xml_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="AJDT">
-        <requirement
-            name="org.eclipse.ajdt.feature.group"/>
-        <requirement
-            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
-        <repository
-            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="recomm">
-        <requirement
-            name="org.eclipse.aether.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.connector.basic.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.transport.file.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.transport.http.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.maven.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.3rd.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.testing.rcp.feature.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/recommenders/updates/stable/"/>
       </setupTask>
     </version>
     <version
@@ -371,15 +343,9 @@
         <requirement
             name="org.eclipse.e4.core.tools.feature.feature.group"/>
         <requirement
-            name="org.eclipse.eclemma.feature.feature.group"/>
-        <requirement
             name="org.eclipse.egit.feature.group"/>
         <requirement
             name="org.eclipse.egit.mylyn.feature.group"/>
-        <requirement
-            name="org.eclipse.jdt.feature.group"/>
-        <requirement
-            name="org.eclipse.jgit.feature.group"/>
         <requirement
             name="org.eclipse.m2e.feature.feature.group"/>
         <requirement
@@ -403,6 +369,12 @@
         <requirement
             name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
         <requirement
+            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
+        <requirement
             name="org.eclipse.swtbot.eclipse.feature.group"/>
         <requirement
             name="org.eclipse.swtbot.eclipse.gef.feature.group"/>
@@ -410,14 +382,12 @@
             name="org.eclipse.swtbot.ide.feature.group"/>
         <requirement
             name="org.eclipse.wst.xml_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
@@ -436,32 +406,6 @@
             url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
         <repository
             url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="recomm">
-        <requirement
-            name="org.eclipse.aether.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.connector.basic.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.transport.file.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.transport.http.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.aether.maven.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.3rd.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.mylyn.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.recommenders.testing.rcp.feature.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/recommenders/updates/stable/"/>
       </setupTask>
     </version>
     <version
@@ -615,7 +559,7 @@
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
-          url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+          url="https://agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
       <repository
           url="http://update.stan4j.com/ide"/>
     </setupTask>
@@ -1132,7 +1076,7 @@
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
-          url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+          url="https://agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -1472,7 +1416,7 @@
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
-          url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+          url="https://agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -1731,7 +1675,7 @@
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
-          url="http://www.agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+          url="https://agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
