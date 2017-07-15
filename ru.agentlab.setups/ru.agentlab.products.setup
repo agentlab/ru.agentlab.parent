@@ -1411,18 +1411,34 @@
           name="it.unibz.instasearch.feature.indigo.feature.group"/>
       <requirement
           name="ch.qos.logback.beagle.feature.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.ide.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.tools.ide.feature.group"/>
+      <requirement
+          name="de.odysseus.stan.eclipse.tools.ide.pde.feature.group"/>
       <repository
           url="http://download.eclipse.org/recommenders/updates/stable/"/>
       <repository
           url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
       <repository
           url="https://agentlab.ru/eclipse/update/ch.qos.logback.beagle/1.1.4.201504020938/"/>
+      <repository
+          url="http://update.stan4j.com/ide"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="loskutov-utils">
       <requirement
-          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+          name="JDepend4Eclipse.feature.group"/>
+      <requirement
+          name="DataHierarchy.feature.group"/>
+      <requirement
+          name="FileSync.feature.group"/>
+      <requirement
+          name="com.cr.lockness.Lockness.feature.feature.group"/>
+      <requirement
+          name="de.loskutov.BytecodeOutline.feature.feature.group"/>
       <requirement
           name="zipeditor.feature.group"/>
       <requirement
@@ -1482,11 +1498,7 @@
       <requirement
           name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
       <requirement
-          name="com.atlassian.connector.eclipse.feature.group"/>
-      <requirement
           name="de.weingardt.mylyn.gitlab.feature.group"/>
-      <repository
-          url="http://update.atlassian.com/atlassian-eclipse-plugin/rest/nightly/e3.7"/>
       <repository
           url="http://pweingardt.github.com/mylyn-gitlab"/>
       <description></description>
@@ -1496,14 +1508,6 @@
         label="PDE">
       <requirement
           name="org.eclipse.sdk.feature.group"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="AJDT">
-      <requirement
-          name="org.eclipse.ajdt.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -1557,8 +1561,6 @@
       <requirement
           name="org.eclipse.rse.feature.group"/>
       <requirement
-          name="org.eclipse.rse.sdk.feature.group"/>
-      <requirement
           name="org.eclipse.rse.useractions.feature.group"/>
       <requirement
           name="org.eclipse.rse.scp.feature.group"/>
@@ -1569,19 +1571,84 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="EclEmma">
-      <requirement
-          name="org.eclipse.eclemma.feature.feature.group"/>
-      <repository
-          url="http://update.eclemma.org"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
         label="Docker">
       <requirement
           name="org.eclipse.linuxtools.docker.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/linuxtools/update-docker-neon3respinb"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="yedit">
+      <requirement
+          name="org.dadacoalition.yedit.feature.feature.group"/>
+      <repository
+          url="http://dadacoalition.org/yedit"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="papyrus">
+      <requirement
+          name="epp.package.modeling"/>
+      <requirement
+          name="org.eclipse.papyrus.sdk.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.amalgam.discovery.feature.group"/>
+      <requirement
+          name="org.eclipse.e4.core.tools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.net4j.feature.group"/>
+      <requirement
+          name="org.eclipse.net4j.db.h2.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.diagram.sirius.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.egit.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.ide.ui.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.compare.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.design.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.ecoretools.explorer.contextual.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.parsley.sdk.source.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.query.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.transaction.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.validation.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gef.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.gmf.runtime.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.ocl.all.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.uml2.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.xsd.sdk.feature.group"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        disabled="true"
+        label="papyrus-team">
+      <requirement
+          name="org.eclipse.emf.cdo.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.cdo.compare.feature.group"/>
+      <requirement
+          name="org.eclipse.papyrus.extra.cdo.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.papyrus.sysml.feature.feature.group"/>
     </setupTask>
     <version
         name="oxygen"
@@ -1620,14 +1687,10 @@
             name="org.eclipse.emf.sdk.feature.group"/>
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
-        <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
+        <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
@@ -1642,6 +1705,24 @@
             name="org.eclipse.buildship.feature.group"/>
         <repository
             url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Themes">
+        <requirement
+            name="com.genuitec.eclipse.theming.feature.feature.group"/>
+        <requirement
+            name="com.genuitec.eclipse.theming.designer.feature.feature.group"/>
+        <repository
+            url="http://www.genuitec.com/updates/webclipse/oxygen/"/>
       </setupTask>
     </version>
     <description>The essential tools for MAIA developers</description>
