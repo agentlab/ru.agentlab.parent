@@ -1593,6 +1593,10 @@
       <requirement
           name="org.eclipse.papyrus.sdk.feature.feature.group"/>
       <requirement
+          name="org.eclipse.papyrus.examples.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.papyrus.toolsmiths.feature.feature.group"/>
+      <requirement
           name="org.eclipse.amalgam.discovery.feature.group"/>
       <requirement
           name="org.eclipse.e4.core.tools.feature.feature.group"/>
@@ -1636,10 +1640,11 @@
           name="org.eclipse.uml2.sdk.feature.group"/>
       <requirement
           name="org.eclipse.xsd.sdk.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/oxygen"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        disabled="true"
         label="papyrus-team">
       <requirement
           name="org.eclipse.emf.cdo.feature.group"/>
@@ -1648,7 +1653,9 @@
       <requirement
           name="org.eclipse.papyrus.extra.cdo.feature.feature.group"/>
       <requirement
-          name="org.eclipse.papyrus.sysml.feature.feature.group"/>
+          name="org.eclipse.papyrus.revisiontool.feature.feature.group"/>
+      <repository
+          url="https://agentlab.ru/p2/org.eclipse.papyrus.collaborativemodeling/2.0.0.201707151616/"/>
     </setupTask>
     <version
         name="oxygen"
