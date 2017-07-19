@@ -5,7 +5,7 @@
 	
 	<groupId>ru.agentlab</groupId>
 	<artifactId>ru.agentlab.parent</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>2.0.0-SNAPSHOT</version>
 	
 	<packaging>pom</packaging>
 	
@@ -15,7 +15,7 @@
 
 	<properties>
 		<tycho-version>1.0.0</tycho-version>
-		<platform-version>[4.6,4.7)</platform-version>
+		<platform-version>[4.7,4.8)</platform-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -123,6 +123,7 @@
 					<version>${tycho-version}</version>
 					<configuration>
 						<targetDefinitionIncludeSource>honor</targetDefinitionIncludeSource>
+						<pomDependencies>consider</pomDependencies>
 					</configuration>
 				</plugin>
 				<plugin>
