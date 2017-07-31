@@ -172,15 +172,31 @@
       <requirement
           name="org.eclipse.egit.mylyn.feature.group"/>
       <requirement
+          name="org.eclipse.mylyn_feature.feature.group"/>
+      <requirement
           name="org.eclipse.mylyn.builds.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.context_feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.gerrit.feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.gerrit.dashboard.feature.feature.group"/>
       <requirement
+          name="org.eclipse.mylyn.git.feature.group"/>
+      <requirement
           name="org.eclipse.mylyn.github.feature.feature.group"/>
       <requirement
+          name="org.eclipse.mylyn.ide_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.java_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.pde_feature.feature.group"/>
+      <requirement
           name="org.eclipse.mylyn.team_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
       <requirement
           name="com.atlassian.connector.eclipse.feature.group"/>
       <repository
@@ -204,11 +220,71 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="Bndtools">
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="org.nodeclipse.enide.editors.gradle.feature.feature.group"/>
+      <repository
+          url="https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2/"/>
+      <repository
+          url="http://www.nodeclipse.org/updates/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         label="Themes">
       <requirement
           name="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group"/>
       <repository
           url="http://fappel.github.io/xiliary/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Terminal">
+      <requirement
+          name="org.eclipse.tm.terminal.view.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.control.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.local.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.serial.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.ssh.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.telnet.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.view.rse.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.useractions.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.scp.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/tm/terminal/marketplace"/>
+      <repository
+          url="http://download.eclipse.org/tm/updates/4.0"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Docker">
+      <requirement
+          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/linuxtools/update-docker-neon3respinb"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="yedit">
+      <requirement
+          name="org.dadacoalition.yedit.feature.feature.group"/>
+      <repository
+          url="http://dadacoalition.org/yedit"/>
     </setupTask>
     <version
         name="latest"
@@ -394,6 +470,14 @@
             url="http://download.eclipse.org/oomph/updates/latest/"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Buildship">
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
