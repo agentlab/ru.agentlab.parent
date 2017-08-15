@@ -374,6 +374,8 @@
         <requirement
             name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
+            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
+        <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
             url="http://download.eclipse.org/releases/oxygen"/>
@@ -396,6 +398,18 @@
           <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygenr</value>
         </detail>
       </annotation>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Eclipse for RCP Developers (Oxygen)">
@@ -461,6 +475,8 @@
         <requirement
             name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
+            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
+        <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
             url="http://download.eclipse.org/releases/oxygen"/>
@@ -470,26 +486,6 @@
             url="http://download.eclipse.org/oomph/updates/latest/"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="Buildship">
-        <requirement
-            name="org.eclipse.buildship.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="AJDT">
-        <requirement
-            name="org.eclipse.ajdt.feature.group"/>
-        <requirement
-            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
-        <repository
-            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
       </setupTask>
     </version>
     <version
@@ -872,13 +868,11 @@
         <requirement
             name="org.eclipse.wst.xml_ui.feature.feature.group"/>
         <repository
+            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
+        <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
@@ -990,13 +984,11 @@
         <requirement
             name="org.eclipse.wst.xml_ui.feature.feature.group"/>
         <repository
+            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
+        <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
@@ -1336,13 +1328,11 @@
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"/>
         <repository
+            url="http://download.eclipse.org/buildship/updates/e46/releases/2.x"/>
+        <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
@@ -1389,13 +1379,11 @@
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"/>
         <repository
+            url="http://download.eclipse.org/buildship/updates/e46/releases/2.x"/>
+        <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
@@ -2279,11 +2267,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
@@ -2459,11 +2443,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
