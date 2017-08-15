@@ -1803,6 +1803,16 @@
         <repository
             url="http://www.genuitec.com/updates/webclipse/oxygen/"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="GrEclipse">
+        <requirement
+            name="org.codehaus.groovy.eclipse.feature.feature.group"/>
+        <requirement
+            name="org.codehaus.groovy24.feature.feature.group"/>
+        <repository
+            url="http://dist.springsource.org/snapshot/GRECLIPSE/e4.7"/>
+      </setupTask>
     </version>
     <description>The essential tools for MAIA developers</description>
   </product>
