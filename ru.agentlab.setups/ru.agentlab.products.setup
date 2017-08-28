@@ -272,14 +272,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Docker">
-      <requirement
-          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/linuxtools/update-docker-neon3respinb"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
         label="yedit">
       <requirement
           name="org.dadacoalition.yedit.feature.feature.group"/>
@@ -297,18 +289,6 @@
           <value>https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygenr</value>
         </detail>
       </annotation>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="AJDT">
-        <requirement
-            name="org.eclipse.ajdt.feature.group"/>
-        <requirement
-            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-        <repository
-            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
-        <repository
-            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-      </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Eclipse for RCP Developers (Oxygen)">
@@ -385,6 +365,26 @@
             url="http://download.eclipse.org/oomph/updates/latest/"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Docker">
+        <requirement
+            name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/linuxtools/update-oxygen-docker"/>
       </setupTask>
     </version>
     <version
@@ -487,6 +487,14 @@
         <repository
             url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Docker">
+        <requirement
+            name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/linuxtools/update-oxygen-docker"/>
+      </setupTask>
     </version>
     <version
         name="neon"
@@ -579,6 +587,14 @@
             url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
         <repository
             url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Docker">
+        <requirement
+            name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/linuxtools/update-docker-neon3respinb"/>
       </setupTask>
       <description></description>
     </version>
@@ -1263,18 +1279,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="AJDT">
-      <requirement
-          name="org.eclipse.ajdt.feature.group"/>
-      <requirement
-          name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
-      <repository
-          url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
         disabled="true"
         label="mousefeed">
       <requirement
@@ -1289,6 +1293,58 @@
           name="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group"/>
       <repository
           url="http://fappel.github.io/xiliary/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Terminal">
+      <requirement
+          name="org.eclipse.tm.terminal.view.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.control.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.local.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.serial.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.ssh.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.telnet.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.connector.remote.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.tm.terminal.view.rse.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.useractions.feature.group"/>
+      <requirement
+          name="org.eclipse.rse.scp.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/tm/terminal/marketplace"/>
+      <repository
+          url="http://download.eclipse.org/tm/updates/4.0"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="yedit">
+      <requirement
+          name="org.dadacoalition.yedit.feature.feature.group"/>
+      <repository
+          url="http://dadacoalition.org/yedit"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Bndtools">
+      <requirement
+          name="bndtools.main.feature.feature.group"/>
+      <requirement
+          name="org.nodeclipse.enide.editors.gradle.feature.feature.group"/>
+      <repository
+          url="https://bndtools.ci.cloudbees.com/job/bndtools.master/lastSuccessfulBuild/artifact/build/generated/p2/"/>
+      <repository
+          url="http://www.nodeclipse.org/updates/"/>
     </setupTask>
     <version
         name="latest.released"
@@ -1339,6 +1395,34 @@
             url="http://download.eclipse.org/oomph/updates/latest/"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Docker">
+        <requirement
+            name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/linuxtools/update-oxygen-docker"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Buildship">
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/buildship/updates/e47/snapshots/2.x"/>
       </setupTask>
     </version>
     <version
@@ -1391,6 +1475,34 @@
         <repository
             url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Docker">
+        <requirement
+            name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/linuxtools/update-oxygen-docker"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Buildship">
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/buildship/updates/e47/snapshots/2.x"/>
+      </setupTask>
     </version>
     <version
         name="neon"
@@ -1435,6 +1547,26 @@
             url="http://download.eclipse.org/releases/neon"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="AJDT">
+        <requirement
+            name="org.eclipse.ajdt.feature.group"/>
+        <requirement
+            name="org.maven.ide.eclipse.ajdt.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/tools/ajdt/46/dev/update"/>
+        <repository
+            url="http://dist.springsource.org/release/AJDT/configurator-v2/"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Buildship">
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
       </setupTask>
     </version>
     <description>The essential tools for Java and DSL developers, including a Java &amp; Xtend IDE, a DSL Framework (Xtext), a Git client, XML Editor, and Maven integration.</description>
@@ -1643,14 +1775,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Docker">
-      <requirement
-          name="org.eclipse.linuxtools.docker.feature.feature.group"/>
-      <repository
-          url="http://download.eclipse.org/linuxtools/update-docker-neon3respinb"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
         label="yedit">
       <requirement
           name="org.dadacoalition.yedit.feature.feature.group"/>
@@ -1779,11 +1903,27 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          label="Buildship">
+          disabled="true"
+          label="sr1-java9">
         <requirement
-            name="org.eclipse.buildship.feature.group"/>
+            name="org.eclipse.jdt.java9patch.feature.group"/>
         <repository
-            url="http://download.eclipse.org/buildship/updates/e46/snapshots/2.x"/>
+            url="http://download.eclipse.org/eclipse/updates/4.7-M-builds/"/>
+        <repository
+            url="http://download.eclipse.org/staging/oxygen/"/>
+        <repository
+            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7-P-builds"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          disabled="true"
+          label="junit5">
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7-U-builds/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1792,6 +1932,22 @@
             name="org.eclipse.ajdt.feature.group"/>
         <repository
             url="http://download.eclipse.org/tools/ajdt/47/dev/update"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Docker">
+        <requirement
+            name="org.eclipse.linuxtools.docker.feature.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/linuxtools/update-oxygen-docker"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Buildship">
+        <requirement
+            name="org.eclipse.buildship.feature.group"/>
+        <repository
+            url="http://download.eclipse.org/buildship/updates/e47/snapshots/2.x"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
