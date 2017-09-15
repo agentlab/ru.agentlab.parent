@@ -1918,14 +1918,53 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
-          disabled="true"
           label="junit5">
         <requirement
             name="org.eclipse.sdk.feature.group"/>
         <requirement
             name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.junit"/>
+        <requirement
+            name="org.eclipse.jdt.junit.core"/>
+        <requirement
+            name="org.eclipse.jdt.junit.runtime"/>
+        <requirement
+            name="org.eclipse.jdt.junit4.runtime"/>
+        <requirement
+            name="org.eclipse.jdt.junit5.runtime"/>
+        <requirement
+            name="org.eclipse.pde.junit.runtime"/>
+        <requirement
+            name="org.junit.jupiter.api"/>
+        <requirement
+            name="org.junit.jupiter.engine"/>
+        <requirement
+            name="org.junit.jupiter.migrationsupport"/>
+        <requirement
+            name="org.junit.jupiter.params"/>
+        <requirement
+            name="org.junit.platform.commons"/>
+        <requirement
+            name="org.junit.platform.engine"/>
+        <requirement
+            name="org.junit.platform.launcher"/>
+        <requirement
+            name="org.junit.platform.runner"/>
+        <requirement
+            name="org.junit.platform.suite.api"/>
+        <requirement
+            name="org.junit.vintage.engine"/>
+        <requirement
+            name="toolingeclipse-junit-tests.configuration"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7-U-builds/"/>
+        <repository
+            url="http://download.eclipse.org/staging/oxygen/"/>
+        <repository
+            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
+        <repository
+            url="http://download.eclipse.org/eclipse/updates/4.7-M-builds/"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
