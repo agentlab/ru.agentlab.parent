@@ -363,8 +363,6 @@
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
-        <repository
-            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -484,8 +482,6 @@
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
-        <repository
-            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -893,8 +889,6 @@
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
-        <repository
-            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1009,8 +1003,6 @@
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
-        <repository
-            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1393,8 +1385,6 @@
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
-        <repository
-            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1472,8 +1462,6 @@
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
-        <repository
-            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1898,8 +1886,6 @@
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository
             url="http://download.eclipse.org/oomph/updates/latest/"/>
-        <repository
-            url="http://download.eclipse.org/oomph/updates/milestone/latest"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -1918,6 +1904,7 @@
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
+          disabled="true"
           label="junit5">
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7-U-builds/"/>
@@ -2256,11 +2243,7 @@
         <repository
             url="http://download.eclipse.org/technology/epp/packages/oxygen"/>
         <repository
-            url="https://hudson.eclipse.org/packaging/job/oxygen.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/repository/"/>
-        <repository
             url="http://download.eclipse.org/releases/oxygen"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7milestones/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.7"/>
         <repository

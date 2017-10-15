@@ -867,8 +867,6 @@
               url="https://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
           <repository
               url="http://download.eclipse.org/eclipse/updates/4.7/"/>
-          <repository
-              url="http://download.eclipse.org/eclipse/updates/4.7milestones"/>
         </repositoryList>
       </targlet>
       <targlet
