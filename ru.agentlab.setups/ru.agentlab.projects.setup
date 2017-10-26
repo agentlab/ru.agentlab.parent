@@ -856,7 +856,7 @@
         <repositoryList
             name="Oxygen">
           <repository
-              url="http://download.eclipse.org/tools/orbit/R-builds/R20170516192513/repository"/>
+              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository"/>
           <repository
               url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
           <repository
