@@ -618,7 +618,8 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="eclipse.target.platform"
-        defaultValue="Neon"
+        value=""
+        defaultValue="Oxygen"
         storageURI="scope://Workspace"
         label="Target Platform">
       <annotation
@@ -638,7 +639,7 @@
         xsi:type="setup:VariableTask"
         name="eclipse.api.baseline.target.platform"
         value=""
-        defaultValue="Neon"
+        defaultValue="Oxygen"
         storageURI="scope://Workspace"
         label="API Baseline Target Platform">
       <annotation
@@ -715,7 +716,7 @@
       <repositoryList
           name="Oxygen">
         <repository
-            url="http://download.eclipse.org/eclipse/updates/4.7-I-builds"/>
+            url="http://download.eclipse.org/eclipse/updates/4.7"/>
       </repositoryList>
       <repositoryList
           name="Neon">
