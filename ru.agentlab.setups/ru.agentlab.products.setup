@@ -112,8 +112,6 @@
       <requirement
           name="de.loskutov.BytecodeOutline.feature.feature.group"/>
       <requirement
-          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
-      <requirement
           name="zipeditor.feature.group"/>
       <requirement
           name="AnyEditTools.feature.group"/>
@@ -669,8 +667,6 @@
       <requirement
           name="de.loskutov.BytecodeOutline.feature.feature.group"/>
       <requirement
-          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
-      <requirement
           name="zipeditor.feature.group"/>
       <requirement
           name="AnyEditTools.feature.group"/>
@@ -1165,8 +1161,6 @@
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="loskutov-utils">
-      <requirement
-          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
       <requirement
           name="zipeditor.feature.group"/>
       <requirement
@@ -1996,8 +1990,6 @@
     <setupTask
         xsi:type="setup.p2:P2Task"
         label="loskutov-utils">
-      <requirement
-          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
       <requirement
           name="zipeditor.feature.group"/>
       <requirement
