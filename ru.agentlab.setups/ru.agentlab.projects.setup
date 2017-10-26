@@ -618,7 +618,6 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="eclipse.target.platform"
-        value=""
         defaultValue="Oxygen"
         storageURI="scope://Workspace"
         label="Target Platform">
