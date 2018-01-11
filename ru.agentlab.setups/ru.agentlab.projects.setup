@@ -841,32 +841,32 @@
         <repositoryList
             name="Neon">
           <repository
+              url="http://download.eclipse.org/eclipse/updates/4.6/"/>
+          <repository
               url="http://download.eclipse.org/tools/orbit/R-builds/R20170307180635/repository"/>
           <repository
-              url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
-          <repository
               url="http://fappel.github.io/xiliary"/>
+          <repository
+              url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
           <repository
               url="https://agentlab.ru/eclipse/update/org.junit/4.12.0/"/>
           <repository
               url="https://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
-          <repository
-              url="http://download.eclipse.org/eclipse/updates/4.6/"/>
         </repositoryList>
         <repositoryList
             name="Oxygen">
           <repository
+              url="http://download.eclipse.org/eclipse/updates/4.7/"/>
+          <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository"/>
           <repository
-              url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
-          <repository
               url="http://fappel.github.io/xiliary"/>
+          <repository
+              url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
           <repository
               url="https://agentlab.ru/eclipse/update/org.junit/4.12.0/"/>
           <repository
               url="https://agentlab.ru/eclipse/update/org.mockito/1.10.19/"/>
-          <repository
-              url="http://download.eclipse.org/eclipse/updates/4.7/"/>
         </repositoryList>
       </targlet>
       <targlet
@@ -1080,8 +1080,6 @@
           <requirement
               name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider"/>
           <requirement
-              name="com.fasterxml.jackson.module.jackson-module-jaxb-annotations"/>
-          <requirement
               name="javassist"/>
           <requirement
               name="javax.annotation"/>
@@ -1141,17 +1139,17 @@
           <requirement
               name="org.glassfish.hk2.utils"/>
           <requirement
-              name="org.glassfish.jersey.containers.jersey-container-servlet"/>
+              name="org.glassfish.jersey.bundles.repackaged.jersey-guava"/>
           <requirement
-              name="org.glassfish.jersey.containers.jersey-container-servlet-core"/>
+              name="org.glassfish.jersey.containers.servlet"/>
+          <requirement
+              name="org.glassfish.jersey.containers.servlet.core"/>
           <requirement
               name="org.glassfish.jersey.core.jersey-client"/>
           <requirement
               name="org.glassfish.jersey.core.jersey-common"/>
           <requirement
               name="org.glassfish.jersey.core.jersey-server"/>
-          <requirement
-              name="org.glassfish.jersey.media.jersey-media-jaxb"/>
           <requirement
               name="org.glassfish.jersey.media.jersey-media-json-jackson"/>
           <requirement
@@ -1163,16 +1161,16 @@
             <repository
                 url="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.10.v20160621"/>
             <repository
-                url="https://agentlab.ru/pd/p2/che/"/>
+                url="https://agentlab.ru/pd/p2/repacked"/>
           </repositoryList>
           <repositoryList
               name="Oxygen">
             <repository
                 url="http://download.eclipse.org/rt/ecf/latest/site.p2"/>
             <repository
-                url="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.10.v20160621"/>
+                url="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x"/>
             <repository
-                url="https://agentlab.ru/pd/p2/che/"/>
+                url="https://agentlab.ru/pd/p2/repacked"/>
           </repositoryList>
         </targlet>
       </setupTask>
@@ -1191,18 +1189,18 @@
             <requirement
                 name="org.apache.httpcomponents.httpcore"/>
             <requirement
-                name="org.eclipse.ecf.provider.jaxrs.feature.feature.group"/>
+                name="org.eclipse.ecf.provider.jersey.client.feature.feature.group"/>
             <requirement
-                name="org.eclipse.ecf.provider.jaxrs.client.feature.feature.group"/>
+                name="org.eclipse.ecf.provider.jersey.server.feature.feature.group"/>
             <repositoryList
                 name="Neon">
               <repository
-                  url="https://agentlab.ru/pd/p2/cloud-jaxrsproviders"/>
+                  url="https://agentlab.ru/p2/jaxrs-jersey-provider_1.1.0"/>
             </repositoryList>
             <repositoryList
                 name="Oxygen">
               <repository
-                  url="https://agentlab.ru/pd/p2/cloud-jaxrsproviders"/>
+                  url="https://agentlab.ru/p2/jaxrs-jersey-provider_1.1.0"/>
             </repositoryList>
           </targlet>
         </setupTask>
