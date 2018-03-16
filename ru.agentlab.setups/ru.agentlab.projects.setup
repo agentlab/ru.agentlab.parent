@@ -1088,7 +1088,7 @@
           <requirement
               name="javax.persistence"/>
           <requirement
-              name="javax.validation"/>
+              name="javax.validation.api"/>
           <requirement
               name="javax.ws.rs"
               versionRange="[2.0.1,2.1.0)"/>
