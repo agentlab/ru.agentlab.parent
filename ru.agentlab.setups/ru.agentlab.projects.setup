@@ -1046,7 +1046,7 @@
           <repositoryList
               name="Oxygen">
             <repository
-                url="http://download.eclipse.org/efxclipse/runtime-nightly/site"/>
+                url="http://download.eclipse.org/efxclipse/runtime-latest/site"/>
             <repository
                 url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
           </repositoryList>
