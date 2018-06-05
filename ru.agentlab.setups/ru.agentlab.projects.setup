@@ -856,11 +856,11 @@
         <repositoryList
             name="Oxygen">
           <repository
-              url="http://download.eclipse.org/eclipse/updates/4.7/"/>
+              url="http://download.eclipse.org/eclipse/updates/4.7/R-4.7.3a-201803300640/"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository"/>
+              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20180330011457/repository"/>
           <repository
-              url="http://fappel.github.io/xiliary"/>
+              url="http://fappel.github.io/xiliary/0.6/"/>
           <repository
               url="https://agentlab.ru/eclipse/update/com.google.jsr305/1.0.0.201502020347"/>
           <repository
@@ -924,7 +924,7 @@
           <repositoryList
               name="Oxygen">
             <repository
-                url="http://download.eclipse.org/releases/oxygen"/>
+                url="http://download.eclipse.org/releases/oxygen/201804111000/"/>
           </repositoryList>
         </targlet>
         <description></description>
@@ -996,8 +996,6 @@
                 name="Oxygen">
               <repository
                   url="http://download.eclipse.org/efxclipse/runtime-latest/site"/>
-              <repository
-                  url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
               <repository
                   url="http://download.eclipse.org/efxclipse/updates-released/3.1.0/site"/>
             </repositoryList>
