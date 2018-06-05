@@ -14,7 +14,7 @@
 	</prerequisites>
 
 	<properties>
-		<tycho-version>1.0.0</tycho-version>
+		<tycho-version>1.1.0</tycho-version>
 		<platform-version>[4.7,4.8)</platform-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -155,21 +155,24 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.0.0</version>
-					<executions>
-						<execution>
-							<id>copy-bundle-classpath-libs</id>
-							<goals>
-								<goal>copy-dependencies</goal>
-							</goals>
-							<configuration>
-								<includeTypes>jar</includeTypes>
-								<overWriteIfNewer>true</overWriteIfNewer>
-								<overWriteReleases>true</overWriteReleases>
-								<overWriteSnapshots>true</overWriteSnapshots>
-							</configuration>
-						</execution>
-					</executions>
+					<version>3.1.1</version>
+						<executions>
+							<execution>
+								<id>copy-dependencies</id>
+								<phase>validate</phase>
+								<goals>
+									<goal>copy-dependencies</goal>
+								</goals>
+								<configuration>
+									<includeTypes>jar</includeTypes>
+									<overWriteReleases>true</overWriteReleases>
+									<overWriteSnapshots>true</overWriteSnapshots>
+									<useSubDirectoryPerArtifact>false</useSubDirectoryPerArtifact>
+									<useSubDirectoryPerScope>false</useSubDirectoryPerScope>
+									<useSubDirectoryPerType>false</useSubDirectoryPerType>
+								</configuration>
+							</execution>
+						</executions>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -186,11 +189,11 @@
 	</build>
 	
 	<pluginRepositories>
-		<pluginRepository>
+		<!--<pluginRepository>
 			<id>tycho-snapshots</id>
 			<name>tycho-snapshots</name>
 			<url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
-		</pluginRepository>
+		</pluginRepository>-->
 		
 		<pluginRepository>
 			<id>mvnrepository</id>
@@ -206,7 +209,7 @@
 		  <url>http://mvnrepository.com</url>
 		</repository>
 		
-		<repository>
+		<!--<repository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -216,7 +219,7 @@
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
-		</repository>
+		</repository>-->
 	</repositories>
 	
 	<profiles>
@@ -236,9 +239,9 @@
 							<configuration>
 								<repositories>
 									<repository>
-										<id>neon</id>
+										<id>oxygen</id>
 										<layout>p2</layout>
-										<url>http://download.eclipse.org/releases/neon</url>
+										<url>http://download.eclipse.org/releases/oxygen</url>
 									</repository>
 								</repositories>
 								<dependencies>
