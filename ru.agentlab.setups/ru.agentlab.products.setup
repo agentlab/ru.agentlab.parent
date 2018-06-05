@@ -50,6 +50,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        disabled="true"
         label="decompiler">
       <requirement
           name="org.sf.feeling.decompiler.feature.group"/>
@@ -601,6 +602,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        disabled="true"
         label="decompiler">
       <requirement
           name="org.sf.feeling.decompiler.feature.group"/>
@@ -1556,6 +1558,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        disabled="true"
         label="decompiler">
       <requirement
           name="org.sf.feeling.decompiler.feature.group"/>
@@ -3487,6 +3490,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        disabled="true"
         label="decompiler">
       <requirement
           name="org.sf.feeling.decompiler.feature.group"/>
