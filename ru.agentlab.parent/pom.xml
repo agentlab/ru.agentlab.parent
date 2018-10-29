@@ -142,6 +142,20 @@
 							<macosx>tar.gz</macosx>
 						</formats>
 					</configuration>
+					<executions>
+						<execution>
+							<id>materialize-products</id>
+							<goals>
+								<goal>materialize-products</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>archive-products</id>
+							<goals>
+								<goal>archive-products</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -196,12 +210,6 @@
 	</build>
 	
 	<pluginRepositories>
-		<!--<pluginRepository>
-			<id>tycho-snapshots</id>
-			<name>tycho-snapshots</name>
-			<url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
-		</pluginRepository>-->
-		
 		<pluginRepository>
 			<id>mvnrepository</id>
 			<name>mvnrepository</name>
@@ -215,18 +223,6 @@
 		  <name>mvnrepository</name>
 		  <url>http://mvnrepository.com</url>
 		</repository>
-		
-		<!--<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>-->
 	</repositories>
 	
 	<profiles>

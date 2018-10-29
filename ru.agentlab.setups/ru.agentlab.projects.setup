@@ -995,9 +995,9 @@
             <repositoryList
                 name="Oxygen">
               <repository
-                  url="http://download.eclipse.org/efxclipse/runtime-latest/site"/>
+                  url="http://download.eclipse.org/efxclipse/runtime-released/3.3.0/site/"/>
               <repository
-                  url="http://download.eclipse.org/efxclipse/updates-released/3.1.0/site"/>
+                  url="http://download.eclipse.org/efxclipse/updates-released/3.3.0/site/"/>
             </repositoryList>
           </targlet>
         </setupTask>
@@ -1044,9 +1044,11 @@
           <repositoryList
               name="Oxygen">
             <repository
-                url="http://download.eclipse.org/efxclipse/runtime-latest/site"/>
+                url="http://download.eclipse.org/efxclipse/runtime-released/3.3.0/site/"/>
             <repository
-                url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+                url="http://download.eclipse.org/efxclipse/updates-released/3.3.0/site/"/>
+            <repository
+                url="http://download.eclipse.org/releases/oxygen/201804111000/"/>
           </repositoryList>
         </targlet>
       </setupTask>
